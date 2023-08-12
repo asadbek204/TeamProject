@@ -1,0 +1,1 @@
+<h1>Hamma faqat o'zini branchiga push qisin mainga oxirida marge qilamza</h1>

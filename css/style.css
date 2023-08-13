@@ -30,10 +30,6 @@ button:hover {
     --ff-open-sans: 'Open Sans', sans-serif;
     --ff-italic: 'Yellowtail';
     /***************************************/
-    
-    /************ background images ***********/
-    --img-footer-bg: url('../img/defaults/footer-bg-img.svg');
-
 }
 
 /*********************************** header styless part ******************************************/
@@ -223,6 +219,7 @@ button:hover {
 .default-site-footer {
     width: 100%;
     height: 100vh;
+    gap: 5vh;
 }
 
 .default-site-footer,
@@ -251,17 +248,33 @@ button:hover {
 }
 
 .footer-form-container {
-    width: 20vw;
-    height: 20vh;
-    background-image: url(--img-footer-bg);
+    width: 72vw;
+    height: 30vh;
+    padding: min(7vh, 3.7vw);
+    display: flex;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../img/defaults/footer-bg-img.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .footer-vertical-hr {
     width: .1vw;
     height: 33.7vh;
     background: #D4D4D4;
+}
+
+.footer-subscribe-text {
+    color: white;
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: min(4.7vh, 2.61vw);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
 
 .footer-h1 {
@@ -306,6 +319,45 @@ button:hover {
     font-style: normal;
     font-weight: 700;
     line-height: 165.4%;
+}
+
+.footer-hr {
+    width: 100%;
+    height: .1px;
+    background-color: #D4D4D4;
+}
+
+.footer-form-button {
+    width: min(20vh, 11vw);
+    height: min(7.5vh, 4.3vw);
+    border-radius: min(1.5vh, .8vw);
+    background-color: var(--clr-blue);
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer-form {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: min(.5vh, .3vw);
+    width: calc(min(20vh, 11vw) + min(40vh));
+}
+
+.footer-form-input {
+    width: min(36vh);
+    height: min(7.5vh, 4.3vw);
+    border-radius: min(1.5vh, .8vw);
+    color: #D4D4D4;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
 }
 
 /**************************************************************************************************/

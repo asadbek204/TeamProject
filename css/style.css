@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@500;700&family=Yellowtail&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+:root {
+    /**** default site colors ****/
+    --clr-blue: #274C5B;
+    --clr-green: #7EB693;
+    --clr-yellow: #EFD372;
+    --clr-gray: #D4D4D4;
+    --clr-black: #525C60;
+    --clr-white-gray: #F9F8F8;
+    --clr-white-green: #EFF6F1;
+    --clr-search-background: #FAFAFA;
+    /*****************************/
+
+    /********* defalut site fonts  *********/
+    --ff-roboto: 'Roboto';
+    --ff-open-sans: 'Open Sans', sans-serif;
+    --ff-italic: 'Yellowtail';
+    /***************************************/
+}
+
+/*********************************** header styless part ******************************************/
+
+.default-site-header {
+    width: 100%;
+}
+
+
+/************************** navigation bar ************************/
+
+/* peace of code from footer */
+.default-site-footer-box,
+.footer-copyright,
+/* peace of code from footer */
+
+.nav-box-1,
+.text-nav-box,
+.nav-box-2,
+.nav-search-box,
+.nav-cart-box,
+.site-logo-box,
+.default-site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/************ site logo style ***********/
+
+.site-logo-box {
+    gap: .5vw;
+}
+
+.site-logo {
+    width: 1.9vw;
+    height: auto;
+}
+
+/****************************************/
+
+.nav-box-1 {
+    gap: 8vw;
+}
+
+.nav-box-2 {
+    gap: min(2vh, 1vw);
+}
+
+.text-nav-box {
+    gap: 2vw;
+}
+
+.default-site-nav {
+    justify-content: space-between;
+    width: 100%;
+    height: min(10.5vw, 20vh);
+    padding: 6vh 8vw;
+}
+
+.site-name {
+    color: var(--clr-blue);
+    font-family: 'Roboto';
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-nav {
+    color: #274C5B;
+    font-family: 'Roboto';
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.select-text {
+    color: #274C5B;
+    font-family: 'Roboto';
+    font-size: .7vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#pages {
+    color: var(--clr-blue);
+    position: relative;
+    width: .8vw;
+    border: 0px;
+    background-color: transparent;
+}
+
+/************* search box ***************/
+
+.search-box {
+    position: relative;
+}
+
+.search-input {
+    /* width: min(19.5vw, 37.5vh);
+    height: min(6.5vh, 3.45vw); */
+    width: 19.5vw;
+    height: 3.45vw;
+    background-color: var(--clr-search-background);
+    border-radius: 5000px;
+}
+
+.search-button {
+    position: absolute;
+    /* right: min(.3vw, .5vh);
+    bottom: min(.4vh, .25vw); */
+    right: .3vw;
+    bottom: .25vw;
+    /* width: min(2.93vw, 5.62vh);
+    height: min(2.93vw, 5.62vh); */
+    width: 2.93vw;
+    height: 2.93vw;
+    border-radius: 50%;
+    background-color: var(--clr-green);
+}
+
+.search-icon {
+    width: min(1.15vw, 2.21vh);
+    height: min(1.1vw, 2.099vh);
+}
+
+/****************************************/
+
+/************** cart box ****************/
+
+.nav-cart-box {
+    padding: min(.3vw, .5vh);
+    justify-content: space-between;
+    width: min(16vh, 8.36vw);
+    height: min(6.5vh, 3.45vw);
+    border-radius: 33px;
+    border: 1px solid #E0E0E0;
+}
+
+.cart-count-text {
+    color: var(--clr-blue);
+    font-family: 'Roboto';
+    font-size: min(1.9vh, 1vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 1.5vh;
+}
+
+.cart-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(2.93vw, 5.62vh);
+    height: min(2.93vw, 5.62vh);
+    border-radius: 50%;
+    background-color: var(--clr-blue);
+}
+
+.cart-icon > img {
+    width: min(1.55vw, 2.31vh);
+    height: min(1.4vw, 2.299vh);
+}
+
+/******************************************************************/
+
+/************************ container styless ***********************/
+
+.header-container {
+    width: 100%;
+    height: calc(100vh - min(10.5vw, 20vh));
+    background-color: var(--clr-white-green);
+}
+
+/**************************************************************************************************/
+
+/*********************************** footer styless part ******************************************/
+
+/**************************************************************************************************/

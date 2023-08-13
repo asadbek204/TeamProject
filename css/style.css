@@ -32,7 +32,7 @@ button:hover {
     /***************************************/
     
     /************ background images ***********/
-    --bg-img-footer: url('../img/defaults/footer-bg-img.svg');
+    --img-footer-bg: url('../img/defaults/footer-bg-img.svg');
 
 }
 
@@ -46,16 +46,12 @@ button:hover {
 /************************** navigation bar ************************/
 
 /* peace of code from footer */
-.default-site-footer-box,
-.footer-copyright,
+.default-site-footer-box, .footer-copyright,
 /* peace of code from footer */
 
-.nav-box-1,
-.text-nav-box,
-.nav-box-2,
-.nav-search-box,
-.nav-cart-box,
-.site-logo-box,
+.nav-box-1, .text-nav-box,
+.nav-box-2, .nav-search-box,
+.nav-cart-box, .site-logo-box,
 .default-site-nav {
     display: flex;
     justify-content: center;
@@ -221,19 +217,95 @@ button:hover {
 /**************************************************************************************************/
 
 /*********************************** footer styless part ******************************************/
-
+.default-site-footer-box {
+    gap: 5vh;
+}
 .default-site-footer {
     width: 100%;
     height: 100vh;
+}
+
+.default-site-footer,
+.footer-content-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+.footer-content-box {
+    height: 33.7vh;
+    justify-content: start;
+    gap: 2vh;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-start {
+    text-align: start;
+}
+
+.text-align-end {
+    text-align: end;
 }
 
 .footer-form-container {
-    background-image: ur;
+    width: 20vw;
+    height: 20vh;
+    background-image: url(--img-footer-bg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.footer-vertical-hr {
+    width: .1vw;
+    height: 33.7vh;
+    background: #D4D4D4;
+}
+
+.footer-h1 {
+    color: var(--clr-blue);
+    font-family: 'Roboto';
+    font-size: min(3.1vh, 1.59vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-social-icon {
+    padding: 20px;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--clr-white-green);
+    color: var(--clr-blue);
+}
+
+.footer-p {
+    color: #525C60;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165.4%; /* 29.772px */
+}
+
+.footer-span {
+    color: #525C60;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 165.4%;
+}
 
 /**************************************************************************************************/

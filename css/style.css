@@ -30,6 +30,10 @@ button:hover {
     --ff-open-sans: 'Open Sans', sans-serif;
     --ff-italic: 'Yellowtail';
     /***************************************/
+    
+    /************ background images ***********/
+    --bg-img-footer: url('../img/defaults/footer-bg-img.svg');
+
 }
 
 /*********************************** header styless part ******************************************/
@@ -65,7 +69,7 @@ button:hover {
 }
 
 .site-logo {
-    width: 1.9vw;
+    max-width: 2rem;
     height: auto;
 }
 
@@ -93,23 +97,23 @@ button:hover {
 .site-name {
     color: var(--clr-blue);
     font-family: 'Roboto';
-    font-size: 2vw;
+    font-size: max(1.25rem, 2vw);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 .text-nav {
-    color: #274C5B;
+    color: var(--clr-blue);
     font-family: 'Roboto';
-    font-size: 1.1vw;
+    font-size: max(.6rem, 1.1vw);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 .select-text {
-    color: #274C5B;
+    color: var(--clr-blue);
     font-family: 'Roboto';
     font-size: .7vw;
     font-style: normal;
@@ -120,7 +124,7 @@ button:hover {
 #pages {
     color: var(--clr-blue);
     position: relative;
-    width: .8vw;
+    width: max(.6rem, .8vw);
     border: 0px;
     background-color: transparent;
 }
@@ -214,8 +218,15 @@ button:hover {
 .default-site-footer {
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.footer-form-container {
+    background-image: ur;
+}
 
 
 /**************************************************************************************************/

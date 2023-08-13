@@ -87,6 +87,13 @@ button:hover {
     gap: 2vw;
 }
 
+.select-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4vw;
+}
+
 .default-site-nav {
     justify-content: space-between;
     width: 100%;
@@ -97,7 +104,7 @@ button:hover {
 .site-name {
     color: var(--clr-blue);
     font-family: 'Roboto';
-    font-size: max(1.25rem, 2vw);
+    font-size: 2vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -124,8 +131,8 @@ button:hover {
 #pages {
     color: var(--clr-blue);
     position: relative;
-    width: max(.6rem, .8vw);
-    border: 0px;
+    width: min(.6rem, .9vw);
+    height:  min(.6rem, .9vw);
     background-color: transparent;
 }
 

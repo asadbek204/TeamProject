@@ -243,10 +243,17 @@ footer a:hover {
 
 /************************ container styless ***********************/
 
-.header-container {
+.header-container img{
     width: 100%;
     height: calc(100vh - min(10.5vw, 20vh));
-    background-color: var(--clr-white-green);
+    position: relative;
+}
+
+.header-container .text {
+    position: absolute;
+    top: 418px;
+    left: 1127px;
+    gap: 36px;
 }
 
 /**************************************************************************************************/

@@ -443,6 +443,7 @@ footer a:hover {
     color: #000;
     background-color: rgb(241, 241, 241);
     box-shadow: -1px 3px 10px #fff;
+    font-style: normal;
 }
 
 .footer-form-container:hover {

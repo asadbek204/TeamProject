@@ -29,6 +29,12 @@
 }
 
 /****************************** default hover effect for buttons ********************************/
+
+.nav-cart-box,
+button, input {
+    transition: 250ms ease all;
+}
+
 .nav-cart-box:hover,
 button:hover {
     cursor: pointer;
@@ -38,12 +44,28 @@ button:hover {
 
 
 /*********** global hover effect section *************/
-
+header a,
+footer a {
+    transition: 250ms ease all;
+}
 
 header a:hover,
 footer a:hover {
     cursor: pointer;
-    text-shadow: -1px 1px 5px #91dbefb5;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-gray);
+    /* text-shadow: -1px 1px 5px #91dbefb5; */
+}
+
+.site-logo-box:hover .site-name{
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-green);
+}
+
+.site-logo-box:hover .site-logo{
+    filter: brightness(0) invert(1) drop-shadow(0px 0px 2px black) drop-shadow(0 0 10px var(--clr-black)) drop-shadow(0 0 2px var(--clr-green));
+
 }
 
 /*********************************** header styless part ******************************************/
@@ -396,8 +418,14 @@ footer a:hover {
 
 .footer-form-input:hover,
 .footer-form-button:hover {
-    box-shadow: -1px 3px 10px #007bfe;
-    text-shadow: -1px 1px 1px #afaaaa;
+    box-shadow: -1px 3px 10px #fff;
+    /* text-shadow: -1px 1px 1px #afaaaa; */
+}
+
+.footer-form-input:focus{
+    outline: none;
+    color: #000;
+    background-color: rgb(241, 241, 241);
 }
 
 .footer-form-container:hover {

@@ -46,23 +46,26 @@ button:hover {
 /*********** global hover effect section *************/
 header a,
 header label,
+header label + select,
 footer a {
     transition: 250ms ease all;
 }
 
 header label:hover,
+header label:hover + #pages,
+header .select-box:hover label,
 header a:hover,
 footer a:hover {
     cursor: pointer;
-    color: #b7f3cd;
-    text-shadow: 0px 1px 1px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-blue);
+    color: var(--clr-yellow);
+    text-shadow: /*-1px 2px 1px black, 0 0 1px var(--clr-black),*/ -1px 1px 1px var(--clr-blue);
     /* text-shadow: -1px 1px 5px #91dbefb5; */
 }
 
 .site-logo-box:hover .site-name {
     cursor: pointer;
-    color: #88f5b0;
-    text-shadow: 0px 1px 1px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-green);
+    color: #0c612bb9;
+    text-shadow:-1px 1px 5px var(--clr-blue);
 }
 
 .site-logo-box:hover .site-logo {

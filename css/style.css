@@ -38,7 +38,7 @@ button, input {
 .nav-cart-box:hover,
 button:hover {
     cursor: pointer;
-    box-shadow: -5px 3px 10px #e0dddd;
+    box-shadow: -5px 3px 5px #e0dddd;
 }
 /************************************************************************************************/
 
@@ -52,20 +52,19 @@ footer a {
 header a:hover,
 footer a:hover {
     cursor: pointer;
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-gray);
+    color: #9ff0bd;
+    text-shadow: 0px 2px 2px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-gray);
     /* text-shadow: -1px 1px 5px #91dbefb5; */
 }
 
-.site-logo-box:hover .site-name{
+.site-logo-box:hover .site-name {
     cursor: pointer;
-    color: #fff;
-    text-shadow: 1px 1px 2px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-green);
+    color: #88f5b0;
+    text-shadow: 0px 1px 2px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-green);
 }
 
-.site-logo-box:hover .site-logo{
+.site-logo-box:hover .site-logo {
     filter: brightness(0) invert(1) drop-shadow(0px 0px 2px black) drop-shadow(0 0 10px var(--clr-black)) drop-shadow(0 0 2px var(--clr-green));
-
 }
 
 /*********************************** header styless part ******************************************/

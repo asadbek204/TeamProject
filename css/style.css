@@ -221,9 +221,45 @@ footer a:hover {
 /************************ container styless ***********************/
 
 .header-container {
+    padding-left: 25vh;
     width: 100%;
     height: calc(100vh - min(10.5vw, 20vh));
-    background-color: var(--clr-white-green);
+    background-color: #E3F1E9;
+    background-image: url('../img/main/header-bg-img.png');
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-content-span {
+    color: #68A47F;
+    font-family: 'Yellowtail';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-content-h1 {
+    color: #274C5B;
+    font-family: 'Roboto';
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.header-content-button {
+    width: 220px;
+    height: 79px;
+    border-radius: 16px;
+    background: #EFD372;
+    color: #274C5B;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 /**************************************************************************************************/

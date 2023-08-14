@@ -361,13 +361,13 @@ button:hover {
 }
 
 .footer-form-button {
-    width: min(20vh, 11vw);
+    width: min(22vh, 11.5vw);
     height: min(7.5vh, 4.3vw);
     border-radius: min(1.5vh, .8vw);
     background-color: var(--clr-blue);
     color: white;
     font-family: 'Roboto';
-    font-size: 20px;
+    font-size: min(2vh, 1vw);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -383,12 +383,12 @@ button:hover {
 
 .footer-form-input {
     padding-left: min(2vh, 1vw);
-    width: min(32vh, 18vw);
+    width: min(34vh, 18vw);
     height: min(7.5vh, 4.3vw);
     border-radius: min(1.5vh, .8vw);
     color: #D4D4D4;
     font-family: 'Roboto';
-    font-size: 18px;
+    font-size: min(1.8vh, .9vw);
     font-style: italic;
     font-weight: 400;
     line-height: normal;

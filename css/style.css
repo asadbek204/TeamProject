@@ -62,11 +62,11 @@ footer a:hover {
 .site-logo-box:hover .site-name {
     cursor: pointer;
     color: #88f5b0;
-    text-shadow: 0px 1px 2px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-green);
+    text-shadow: 0px 1px 1px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-green);
 }
 
 .site-logo-box:hover .site-logo {
-    filter: brightness(0) invert(1) drop-shadow(0px 0px 2px black) drop-shadow(0 0 10px var(--clr-black)) drop-shadow(0 0 2px var(--clr-green));
+    filter: invert(25%) sepia(52%) saturate(416%) hue-rotate(151deg) brightness(50%) contrast(94%) drop-shadow(0px 1px 4px #fff) drop-shadow(0 0 2px var(--clr-white-green)) drop-shadow(0 0 3px var(--clr-green));
 }
 
 /*********************************** header styless part ******************************************/
@@ -99,6 +99,7 @@ footer a:hover {
 }
 
 .site-logo {
+    transition: 200ms all ease;
     width: 1.9vw;
     height: auto;
 }
@@ -135,6 +136,7 @@ footer a:hover {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: 200ms ease all;
 }
 
 .text-nav {
@@ -330,6 +332,7 @@ footer a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: 250ms ease all;
 }
 
 .footer-vertical-hr {

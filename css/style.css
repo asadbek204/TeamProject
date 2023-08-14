@@ -54,7 +54,7 @@ header label:hover,
 header a:hover,
 footer a:hover {
     cursor: pointer;
-    color: #9ff0bd;
+    color: #b7f3cd;
     text-shadow: 0px 2px 2px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-gray);
     /* text-shadow: -1px 1px 5px #91dbefb5; */
 }

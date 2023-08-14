@@ -251,11 +251,54 @@ footer a:hover {
 
 .header-container .text {
     position: absolute;
-    top: 418px;
-    left: 1127px;
+    top: 300px;
+    left: 1000px;
     gap: 36px;
 }
 
+.header-container .text button {
+    width: 275px;
+    height: 79px;
+    padding: 28px 49px 28px 46px;
+    gap: 10px;
+    border-radius: 16px;
+    background-color: var(--clr-blue);
+    color: #FFF;
+    font-family: var(--ff-roboto);
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 700;
+}
+
+.header-container .text h1 {
+    font-size: 200px;
+    color: #8FA8A8;
+}
+
+.header-container .text h2 {
+    font-family: var(--ff-roboto);
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 82px;
+    color: var(--clr-blue);
+}
+
+
+.header-container .text p {
+    font-family: var(--ff-open-sans);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--clr-black);
+    margin-bottom: 30px;
+}
+
+.header-container .text button:hover {
+    background-color: yellow;
+    color: black;
+    transition: 2s ease;
+    box-shadow:#000;
+}
 /**************************************************************************************************/
 
 /*********************************** footer styless part ******************************************/

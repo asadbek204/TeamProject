@@ -45,10 +45,12 @@ button:hover {
 
 /*********** global hover effect section *************/
 header a,
+header label,
 footer a {
     transition: 250ms ease all;
 }
 
+header label:hover,
 header a:hover,
 footer a:hover {
     cursor: pointer;

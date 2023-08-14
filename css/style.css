@@ -57,20 +57,17 @@ header .select-box:hover label,
 header a:hover,
 footer a:hover {
     cursor: pointer;
-    color: var(--clr-yellow);
-    text-shadow: /*-1px 2px 1px black, 0 0 1px var(--clr-black),*/ -1px 1px 1px var(--clr-blue);
-    /* text-shadow: -1px 1px 5px #91dbefb5; */
+    color: var(--clr-green);
 }
 
 .site-logo-box:hover .site-name {
     cursor: pointer;
-    color: #0c612bb9;
-    text-shadow:-1px 1px 5px var(--clr-blue);
+    color: #038432b9;
 }
 
 .site-logo-box:hover .site-logo {
     /* filter: brightness(0) invert(1) drop-shadow(0px 0px 2px black) drop-shadow(0 0 10px var(--clr-black)) drop-shadow(0 0 2px var(--clr-green)); */
-    filter: invert(25%) sepia(52%) saturate(416%) hue-rotate(151deg) brightness(50%) contrast(94%) drop-shadow(-2px 2px 10px var(--clr-green));
+    filter: invert(25%) sepia(52%) saturate(416%) hue-rotate(151deg) brightness(50%) contrast(94%); /*drop-shadow(-2px 2px 10px var(--clr-green)) ;*/
 }
 
 /*********************************** header styless part ******************************************/

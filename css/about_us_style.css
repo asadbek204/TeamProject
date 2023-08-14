@@ -250,7 +250,30 @@ footer a:hover {
     height: calc(100vh - min(10.5vw, 20vh));
     background-color: var(--clr-white-green);
 }
-
+.head-baner {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 100%;
+    position: relative;
+}
+.head-img {
+    height: auto;
+    width: 100%;
+}
+.head-text {
+    position: absolute;
+    z-index: 1;
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: min(8vw, 70px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+}
 /**************************************************************************************************/
 
 /*********************************** footer styless part ******************************************/

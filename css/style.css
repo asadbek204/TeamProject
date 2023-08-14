@@ -28,12 +28,17 @@
     /***************************************/
 }
 
-/*********** global hover effect section *************/
+/****************************** default hover effect for buttons ********************************/
 .nav-cart-box:hover,
 button:hover {
     cursor: pointer;
     box-shadow: -5px 3px 10px #e0dddd;
 }
+/************************************************************************************************/
+
+
+/*********** global hover effect section *************/
+
 
 header a:hover,
 footer a:hover {

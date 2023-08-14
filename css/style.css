@@ -56,7 +56,6 @@ header label:hover + #pages,
 header .select-box:hover label,
 header a:hover,
 footer a:hover {
-    text-shadow: -.5px .5px .5px black;
     cursor: pointer;
     color: green;
 }
@@ -254,6 +253,14 @@ footer a:hover {
 /**************************************************************************************************/
 
 /*********************************** footer styless part ******************************************/
+
+/******************* footer hover section ************************/
+.default-site-footer a:hover {
+    color: green;
+    text-shadow: -.1px .1px .1px black;
+}
+
+/*****************************************************************/
 .default-site-footer-box {
     gap: 2.8vw;
 }
@@ -435,6 +442,7 @@ footer a:hover {
     outline: none;
     color: #000;
     background-color: rgb(241, 241, 241);
+    box-shadow: -1px 3px 10px #fff;
 }
 
 .footer-form-container:hover {

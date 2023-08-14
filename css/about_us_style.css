@@ -281,6 +281,11 @@ footer a:hover {
 
 /* plate section style start */
 
+.my-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .plate-box {
     padding-top: 4%;
     display: flex;
@@ -311,7 +316,7 @@ footer a:hover {
     width: 50%;
 }
 
-.plate-txt>h3 {
+main h3 {
     color: var(--clr-green);
     font-family: Yellowtail;
     font-size: 36px;
@@ -388,11 +393,60 @@ footer a:hover {
 
 
 /* start of green vegetables */
-
-.my-container {
-    width: 70%;
-    margin: 0 auto;
+.veg-background{
+    width: 100%;
+    height: 200vh;
+    background-color: var(--clr-white-gray);
 }
+.veg-background>.my-container {
+    background-color: red;
+    height: 100vh;
+}
+.decide {
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.decide-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+    background-color: lightblue;
+}
+.decide-img {
+    width: 50%;
+    background-color: lightseagreen;
+}
+
+
+.decide-span {
+    margin-top: 5%;
+    gap: 3%;
+    display: flex;
+    align-items: center;
+    padding: 5% 20% 5% 5%;
+    background-color: #ECECEC;;
+    border-radius: 50px;
+
+}
+.decide-span>span{
+
+    white-space: nowrap;
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+/* .decide .small-p:nth-child(2), */
+.p-last-child {
+    margin-left: 10%;
+}
+
 /**************************************************************************************************/
 
 /*********************************** footer styless part ******************************************/
@@ -570,9 +624,10 @@ footer a:hover {
 }
 
 .footer-form-input:focus{
-    outline: none;
+    outline: var(--clr-black) solid 1px;
     color: #000;
     background-color: rgb(241, 241, 241);
+    box-shadow: -1px 3px 10px #fff;
 }
 
 .footer-form-container:hover {

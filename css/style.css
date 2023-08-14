@@ -214,14 +214,32 @@ button:hover {
 
 /*********************************** footer styless part ******************************************/
 .default-site-footer-box {
-    gap: 5vh;
-}
-.default-site-footer {
-    width: 100%;
-    height: 100vh;
-    gap: 5vh;
+    gap: 2.8vw;
 }
 
+.footer-container {
+    width: 100%;
+    height: 70vh;
+    gap: 10vh;
+}
+
+.default-site-footer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    gap: 10vh;
+}
+
+.footer-copyright {
+    width: 100%;
+    height: 5vh;
+    gap: .2vw;
+}
+
+.footer-text-box-2,
+.footer-text-box,
+.footer-copyright-box,
+.footer-container,
 .default-site-footer,
 .footer-content-box {
     display: flex;
@@ -229,17 +247,31 @@ button:hover {
     justify-content: center;
 }
 
-.footer-content-box {
-    height: 33.7vh;
-    justify-content: start;
+.footer-text-box-2 {
     gap: 2vh;
 }
 
+.footer-copyright-box {
+    width: 100%;
+    height: min(5vh,3.2vw);
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-content-box {
+    height: 33.7vh;
+    justify-content: start;
+    gap: 3vh;
+}
+
 .text-align-center {
+    width: 26vw;
     text-align: center;
 }
 
 .text-align-start {
+    width: 12vw;
     text-align: start;
 }
 
@@ -262,8 +294,8 @@ button:hover {
 }
 
 .footer-vertical-hr {
-    width: .1vw;
-    height: 33.7vh;
+    width: .1px;
+    height: 32vh;
     background: #D4D4D4;
 }
 
@@ -287,6 +319,7 @@ button:hover {
 }
 
 .footer-social {
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,7 +328,7 @@ button:hover {
 
 .footer-social-icon {
     padding: 20px;
-    font-size: 18px;
+    font-size: min(2vh, 1.1vw);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -306,7 +339,7 @@ button:hover {
 .footer-p {
     color: #525C60;
     font-family: 'Open Sans';
-    font-size: 18px;
+    font-size: min(1.8vh, .9vw);
     font-style: normal;
     font-weight: 400;
     line-height: 165.4%; /* 29.772px */
@@ -315,7 +348,7 @@ button:hover {
 .footer-span {
     color: #525C60;
     font-family: 'Open Sans';
-    font-size: 18px;
+    font-size: min(1.8vh, .9vw);
     font-style: normal;
     font-weight: 700;
     line-height: 165.4%;
@@ -349,7 +382,8 @@ button:hover {
 }
 
 .footer-form-input {
-    width: min(36vh);
+    padding-left: min(2vh, 1vw);
+    width: min(32vh, 18vw);
     height: min(7.5vh, 4.3vw);
     border-radius: min(1.5vh, .8vw);
     color: #D4D4D4;

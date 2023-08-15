@@ -513,7 +513,7 @@ footer a:hover {
     font-weight: 400;
     line-height: normal;
     border-radius: 5000px;
-    background-color: #f0efef;
+    background-color: var(--clr-white-gray);
     transition: 300ms ease all;
 }
 

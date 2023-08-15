@@ -68,9 +68,6 @@ footer a:hover {
 /*********************************** header styless part ******************************************/
 
 .default-site-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
 }
 
@@ -242,10 +239,18 @@ footer a:hover {
 
 /************************ container styless ***********************/
 
+.header-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* you must change this place */
+    background-color: var(--clr-white-green);
+    /******************************/
+}
+
 .header-container {
     width: 70%;
     height: calc(100vh - min(10.5vw, 20vh));
-    background-color: var(--clr-white-green);
 }
 
 /**************************************************************************************************/

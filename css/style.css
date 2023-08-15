@@ -141,7 +141,7 @@ footer a:hover {
 .text-nav {
     color: var(--clr-blue);
     font-family: 'Roboto';
-    font-size: max(.6rem, 1.1vw);
+    font-size: min(2vh, 1.1vw);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -159,8 +159,8 @@ footer a:hover {
 #pages {
     color: var(--clr-blue);
     position: relative;
-    width: min(.6rem, .9vw);
-    height:  min(.6rem, .9vw);
+    width: min(2vh, .9vw);
+    height:  min(2vh, .9vw);
     background-color: transparent;
 }
 
@@ -347,7 +347,7 @@ footer a:hover {
     height: 30vh;
     padding: min(7vh, 3.7vw);
     display: flex;
-    border-radius: 30px;
+    border-radius: min(3vh, 1.7vw);
     justify-content: space-between;
     align-items: center;
     background-image: url('../img/defaults/footer-bg-img.svg');
@@ -396,10 +396,10 @@ footer a:hover {
 }
 
 .footer-social-icon {
-    padding: 20px;
+    padding: min(2vh, 1.1vw);
     font-size: min(2vh, 1.1vw);
-    width: 60px;
-    height: 60px;
+    width: min(6vh, 3.2vw);
+    height: min(6vh, 3.2vw);
     border-radius: 50%;
     background-color: var(--clr-white-green);
     color: var(--clr-blue);

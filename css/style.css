@@ -501,6 +501,7 @@ footer a:hover {
     left: -15px;
 	top: 20px;
 	padding: 15px 0px 0px 0px;
+    transition: 300ms ease all;
 }
 
 .select-box-menu-list-item {
@@ -514,7 +515,7 @@ footer a:hover {
     line-height: normal;
     border-radius: 5000px;
     background-color: var(--clr-white-gray);
-    transition: 300ms ease all;
+    transition: 0;
 }
 
 .sub-menu__list:hover .select-box-menu-list-item:hover {

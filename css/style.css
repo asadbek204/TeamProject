@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@500;700&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@500;700;800&family=Yellowtail&display=swap');
 
 * {
     margin: 0;
@@ -244,12 +244,19 @@ footer a:hover {
 
 /************************ container styless ***********************/
 
-.header-container {
-    padding-left: 25vh;
-    width: 100%;
+.header-body {
     height: calc(100vh - min(10.5vw, 20vh));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #E3F1E9;
     background-image: url('../img/main/header-bg-img.png');
+}
+
+.header-container {
+    width: 70%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -274,6 +281,7 @@ footer a:hover {
 }
 
 .header-content-button {
+    margin-top: 1.5vh;
     width: 220px;
     height: 79px;
     border-radius: 16px;

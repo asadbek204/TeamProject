@@ -522,6 +522,10 @@ footer a:hover {
     margin-top: 10px;
 }
 
+.sub-menu__list:hover {
+    cursor: pointer;
+}
+
 .sub-menu__list:hover .select-box-menu-list-item {
     margin-top: 5px;
 }

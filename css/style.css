@@ -281,6 +281,10 @@ footer a:hover {
 }
 
 .header-content-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7vw;
     margin-top: 1.5vh;
     width: 220px;
     height: 79px;
@@ -295,6 +299,43 @@ footer a:hover {
 }
 
 /**************************************************************************************************/
+
+
+/********************* styless for all pages without headeer and footer ***************************/
+
+/********************* page-1 styless section ***********************/
+
+.page-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-1-body {
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2vw;   
+}
+
+/********************* page-2 styless section ***********************/
+
+/********************* page-3 styless section ***********************/
+
+/********************* page-4 styless section ***********************/
+
+/********************* page-5 styless section ***********************/
+
+/********************* page-6 styless section ***********************/
+
+/********************* page-7 styless section ***********************/
+
+/********************* page-8 styless section ***********************/
+
+
+/**************************************************************************************************/
+
 
 /*********************************** footer styless part ******************************************/
 .default-site-footer-box {

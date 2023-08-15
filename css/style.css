@@ -244,10 +244,20 @@ footer a:hover {
 
 /************************ container styless ***********************/
 
+.header-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* you must change this place */
+    background-color: var(--clr-white-green);
+    /******************************/
+}
+
 .header-container {
     width: 70%;
     height: calc(100vh - min(10.5vw, 20vh));
-    background-color: var(--clr-white-green);
+    background-color: var(--clr-white-gray);
 }
 
 /**************************************************************************************************/

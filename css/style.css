@@ -316,9 +316,13 @@ footer a:hover {
 
 .page-1-body {
     width: 70%;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 2vw;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-1-body > img {
+    border-radius: 2em;
 }
 
 /********************* page-2 styless section ***********************/

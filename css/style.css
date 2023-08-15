@@ -245,7 +245,7 @@ footer a:hover {
 /************************ container styless ***********************/
 
 .header-container {
-    width: 100%;
+    width: 70%;
     height: calc(100vh - min(10.5vw, 20vh));
     background-color: var(--clr-white-green);
 }

@@ -57,7 +57,11 @@ header .select-box:hover label,
 header a:hover,
 footer a:hover {
     cursor: pointer;
+<<<<<<< HEAD
     color: var(--clr-green);
+=======
+    color: green;
+>>>>>>> main
 }
 
 .site-logo-box:hover .site-name {
@@ -245,6 +249,7 @@ footer a:hover {
 /************************ container styless ***********************/
 
 .header-body {
+<<<<<<< HEAD
     height: calc(100vh - min(10.5vw, 20vh));
     width: 100%;
     display: flex;
@@ -253,10 +258,20 @@ footer a:hover {
     align-items: center;
     background-color: #E3F1E9;
     background-image: url('../img/main/header-bg-img.png');
+=======
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* you must change this place */
+    background-color: var(--clr-white-green);
+    /******************************/
+>>>>>>> main
 }
 
 .header-container {
     width: 70%;
+<<<<<<< HEAD
     display: flex;
     justify-content: start;
     align-items: center;
@@ -296,6 +311,10 @@ footer a:hover {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+=======
+    height: calc(100vh - min(10.5vw, 20vh));
+    background-color: var(--clr-white-gray);
+>>>>>>> main
 }
 
 /**************************************************************************************************/
@@ -338,6 +357,14 @@ footer a:hover {
 
 
 /*********************************** footer styless part ******************************************/
+
+/******************* footer hover section ************************/
+.default-site-footer a:hover {
+    color: green;
+    text-shadow: -.1px .1px .1px black;
+}
+
+/*****************************************************************/
 .default-site-footer-box {
     gap: 2.8vw;
 }
@@ -376,6 +403,10 @@ footer a:hover {
     gap: 2vh;
 }
 
+#small-logo-box {
+    width: 11vw;
+}
+
 .footer-copyright-box {
     width: 100%;
     height: min(5vh,3.2vw);
@@ -393,6 +424,7 @@ footer a:hover {
 .text-align-center {
     width: 26vw;
     text-align: center;
+    align-items: center;
 }
 
 .text-align-start {
@@ -416,6 +448,7 @@ footer a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: 250ms ease all;
 }
 
 .footer-vertical-hr {
@@ -513,6 +546,8 @@ footer a:hover {
     outline: none;
     color: #000;
     background-color: rgb(241, 241, 241);
+    box-shadow: -1px 3px 10px #fff;
+    font-style: normal;
 }
 
 .footer-form-container:hover {

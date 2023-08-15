@@ -308,6 +308,7 @@ footer a:hover {
 /********************* page-1 styless section ***********************/
 
 .page-1 {
+    height: 65vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -322,10 +323,27 @@ footer a:hover {
 }
 
 .page-1-body > img {
-    border-radius: 2em;
+    width: 48.6%;
+    border-radius: min(1.6vw, 3vh);
 }
 
 /********************* page-2 styless section ***********************/
+
+.page-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #F9F8F8;
+    background-color: #F9F8F8;
+}
+
+.page-2-body {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /********************* page-3 styless section ***********************/
 
@@ -424,7 +442,7 @@ footer a:hover {
 }
 
 .footer-form-container {
-    width: 72vw;
+    width: 70%;
     height: 30vh;
     padding: min(7vh, 3.7vw);
     display: flex;
@@ -551,7 +569,7 @@ footer a:hover {
 
 .footer-form-input {
     padding-left: min(2vh, 1vw);
-    width: min(34vh, 18vw);
+    width: min(32vh, 17vw);
     height: min(7.5vh, 4.3vw);
     border-radius: min(1.5vh, .8vw);
     color: #D4D4D4;

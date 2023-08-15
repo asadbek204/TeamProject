@@ -68,6 +68,9 @@ footer a:hover {
 /*********************************** header styless part ******************************************/
 
 .default-site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 

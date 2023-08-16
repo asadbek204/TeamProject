@@ -381,13 +381,14 @@ footer a:hover {
     height: 100vh;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     fill: #F9F8F8;
     background-color: #F9F8F8;
 }
 
 .page-2-body {
     width: 85%;
+    height: 80vh;
     margin-left: 5.5%;
     display: flex;
     align-items: start;
@@ -405,11 +406,12 @@ footer a:hover {
 }
 
 .page-2-box-2 {
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 1vh;
+    gap: 1.2vh;
 }
 
 .page-2-box:last-child {
@@ -469,11 +471,11 @@ footer a:hover {
     gap: .5vw;
     margin-top: 1vh;
     width: 11.5vw;
-    height: 7.5vh;
+    height: 7.7vh;
     background-color: var(--clr-blue);
     border-radius: min(1.5vh, .8vw);
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -484,18 +486,21 @@ footer a:hover {
 
 .page-3 {
     width: 100%;
-    height: 140vh;
+    height: 170vh;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .page-3-body {
+    text-align: center;
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 4vh;
 }
 
 .page-3-italic-green {
@@ -510,7 +515,7 @@ footer a:hover {
 .page-3-h1-blue {
     color: #274C5B;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 50px;
     font-style: normal;
     font-weight: 800;
@@ -519,7 +524,74 @@ footer a:hover {
 
 .page-3-product-type {
     background-color: var(--clr-blue);
+    box-sizing: content-box;
+    padding: min(.5vh, .3vw) min(1vh, .5vw);
+    border-radius: min(.9vh, .4vw);
     color: #FFF;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    left: 1.5vw;
+    top: 2vh;
+}
+
+.page-3-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: min(2vh, 1vw);
+}
+
+.page-3-box {
+    position: relative;
+}
+
+.page-3-product-text-box{
+    text-align: start;
+    width: 83%;
+    position: absolute;
+    bottom: 2vh;
+    left: 1.5vw;
+}
+
+.page-3-learn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5vw;
+    width: 11.5vw;
+    height: 8vh;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: var(--clr-blue);
+    border-radius: 1.5vh;
+    margin-top: 10vh;
+}
+
+.page-3-price-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .5vw;
+    color: var(--clr-blue);
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.discount {
+    position: relative;
+    color: #B8B8B8;
     text-align: center;
     font-family: 'Open Sans';
     font-size: 15px;
@@ -528,23 +600,39 @@ footer a:hover {
     line-height: normal;
 }
 
-.page-3-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-
-.page-3-box {
-    position: relative;
-}
-
-.page-3-product-text-box,
-.page-3-product-type {
+.discount > .line {
     position: absolute;
+    background-color: #B8B8B8;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: .1vh;
 }
 
-.page-3-learn-more {
-    background-color: var(--clr-blue);
-    border-radius: 1vh;
+.page-3-blue-p {
+    color: var(--clr-blue);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.page-3-rate-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.star-box {
+    display: flex;
+}
+
+.page-3-hr {
+    width: 100%;
+    height: 1px;
+    margin-top: 1vh;
+    margin-bottom: .5vh;
+    background-color: #DEDDDD;
 }
 
 /********************* page-4 styless section ***********************/

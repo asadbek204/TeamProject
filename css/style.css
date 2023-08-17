@@ -309,6 +309,40 @@ footer a:hover {
     transition: 2s ease;
     box-shadow:#000;
 }
+
+.change-log {
+    display: flex;
+    width: 705px;
+    height: 216px;
+    border-radius: 30px;
+    padding: 26px 41px;
+    gap: 10px;
+    color: #FFF;
+    box-shadow: 0px 39px 37px 0px #C3C3C340;
+}
+
+.change-log .txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.change-log .txt > h1 {
+    font-family: var(--ff-roboto);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 46px;
+    color: var(--clr-blue);
+}
+
+.change-log .txt > p {
+    font-family: var(--ff-open-sans);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--clr-black);
+}
 /**************************************************************************************************/
 
 /*********************************** footer styless part ******************************************/

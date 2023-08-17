@@ -397,7 +397,7 @@ main h3 {
     display: flex;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 140vh;
     background-color: var(--clr-white-gray);
 }
 .veg-background>.my-container {
@@ -405,6 +405,7 @@ main h3 {
     height: auto;
 }
 .decide {
+    padding-top: 10vh;
     width: 100%;
     display: flex;
     min-height: 50vh;
@@ -451,7 +452,6 @@ main h3 {
     line-height: normal; 
 }
 
-/* .decide .small-p:nth-child(2), */
 .p-last-child {
     margin-left: 14%;
 }
@@ -463,9 +463,52 @@ main h3 {
     height: auto;
 }
 
+.grid-container {
+    margin: 10vh auto;
+    width: 80%;
+    background-color: var(--clr-white-gray);
+    height: 30vh;
+}
+.grid-box {
+    justify-content: center;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 2.7%;
+}
+.grid-box > div {
+    padding: 0px 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    height: 100%;
+    background-color: #fff;
 
+}
 
+.icon-vegs {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    background-color: var(--clr-white-gray);
+    border-radius: 20%;
+}
+.icon-vegs>img {
+    scale: 80%;
 
+}
+
+.grid-box>div>h5 {
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
 /**************************************************************************************************/
 
 /*********************************** footer styless part ******************************************/

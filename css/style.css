@@ -343,6 +343,58 @@ footer a:hover {
     line-height: 29px;
     color: var(--clr-black);
 }
+
+
+/* ******************************main content********************************************* */
+.main-container {
+    width: 856px;
+    height: 351px;
+    border-radius: 30px;
+    padding: 35px 31px;
+    gap: 10px;
+    color: #FFF;
+    box-shadow: 0px 39px 37px 0px #C3C3C340;
+    display: flex;
+}
+
+.main-container .text1 > h3 {
+    color: var(--clr-blue);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    font-family: var(--ff-roboto);
+    margin-top: 24px;
+    margin-left: 32px;
+}
+
+.main-container .text1 > .form {
+    width: 569px;
+    height: 80px;
+    border-radius: 16px;
+    border: 1px solid #7EB693;
+    margin-top: 26px;
+    margin-left: 32px;
+}
+
+.main-container .text1 > button {
+    width: 210px;
+    height: 80px;
+    padding: 28px, 45px, 29px, 45px;
+    gap: 10px;
+    border-radius: 16px;
+    background-color: var(--clr-blue);
+    color: #FFF;
+    font-family: var(--ff-roboto);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px; 
+    margin-top: 26px;
+    margin-left: 32px;
+}
+
+.main-container .text1  button > img {
+    margin-left: 10px;
+}
 /**************************************************************************************************/
 
 /*********************************** footer styless part ******************************************/

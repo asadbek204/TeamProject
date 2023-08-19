@@ -376,6 +376,12 @@ footer a:hover {
     margin-left: 32px;
 }
 
+.main-container .text1 .form > input {
+    font-size: 16px;
+    margin: 10px;
+    outline: none;
+}
+
 .main-container .text1 > button {
     width: 210px;
     height: 80px;

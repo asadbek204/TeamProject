@@ -642,6 +642,8 @@ footer a:hover {
     width: 100%;
     height: 120vh;
     background-image: url('../img/main/page-4-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -664,20 +666,49 @@ footer a:hover {
 
 .page-4-box-container {
     position: relative;
-
+    width: 780px;
+    height: 400px;
 }
 
 .page-4-box {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    gap: 2vh;
     visibility: hidden;
+}
+
+.page-4-box.page-4-selected-box {
+    visibility: visible;
+}
+
+.page-4-star > img {
+    width: 25px;
+    height: 25px;
+}
+
+.page-4-customers-selection-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+}
+
+.page-4-customers-selection-buttons > button[type="button"] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+}
+
+.page-4-customers-selection-buttons > button[type="button"].page-4-selected-button {
+    background-color: #7EB693;
 }
 
 .page-4-italic-green {
@@ -731,7 +762,7 @@ footer a:hover {
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 165.4%; /* 29.772px */
+    line-height: 165.4%;
 }
 
 .page-4-customer-name {
@@ -743,8 +774,35 @@ footer a:hover {
     line-height: normal;
 }
 
-.page-4-selected-box {
-    visibility: visible;
+.page-4-hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--clr-gray);
+}
+
+.page-4-cycle-rate-box {
+    gap: 62px;
+}
+
+.page-4-cycle-rate-border {
+    width: 211px;
+    height: 211px;
+    border: 4px solid #7EB693;
+    border-radius: 211px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-4-rate-cycle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 189px;
+    height: 189px;
+    border-radius: 189px;
+    background: #F1F1F1;
 }
 
 /********************* page-5 styless section ***********************/

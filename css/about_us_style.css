@@ -501,13 +501,92 @@ main h3 {
 
 }
 
-.grid-box>div>h5 {
+h5 {
     color: #274C5B;
     font-family: Roboto;
     font-size: 25px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+}
+
+/* end of green vegs section */
+
+
+/* start of experts section */
+
+.experts {
+    min-height: 120vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.experts>.my-container{
+    background-color: #fff;
+    text-align: center;
+}
+
+.experts-text {
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.experts-grid {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+}
+
+.expert-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-height: 55vh;
+    background-color: var(--clr-white-gray);
+    border-radius: 5%;
+}
+
+.expert-box>img {
+    border-radius: 5% 5% 0 0;
+    width: 100%;
+
+}
+
+.expert-box h3 {
+    text-align: left;
+    font-size: 22px;
+}
+
+.experts-desc {
+    padding: 5% 0 5% 7%;
+}
+.expert-socials{
+    position: absolute;
+    bottom: 4%;
+    right: 9%;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.expert-socials a {
+    margin-right: 10%;
+}
+
+
+.expert-socials a img {
+    scale: 0.85;
+}
+
+/* end of experts section */
+
+
+
+.offers {
+    height: 80vh;
+    background-color: var(--clr-blue);
 }
 /**************************************************************************************************/
 

@@ -308,7 +308,7 @@ footer a:hover {
 /************* Organick *************/
 /********************* page-1 styless section ***********************/
 
-.page-1 {
+#organick .page-1 {
     height: 70vh;
     width: 100%;
     display: flex;
@@ -316,7 +316,7 @@ footer a:hover {
     align-items: center;
 }
 
-.page-1-body {
+#organick .page-1-body {
     width: 70%;
     display: flex;
     justify-content: center;
@@ -324,8 +324,8 @@ footer a:hover {
     gap: 2vw;
 }
 
-.page-1-box-2,
-.page-1-box-1 {
+#organick .page-1-box-2,
+#organick .page-1-box-1 {
     position: relative;
     width: 100%;
     height: 35vh;
@@ -340,7 +340,7 @@ footer a:hover {
     background-size: cover;
 }
 
-.page-1-italic {
+#organick .page-1-italic {
     font-family: var(--ff-italic);
     font-size: 36px;
     font-style: normal;
@@ -348,7 +348,7 @@ footer a:hover {
     line-height: normal;
 }
 
-.page-1-p {
+#organick .page-1-p {
     font-family: var(--ff-roboto);
     font-size: 40px;
     font-style: normal;
@@ -356,29 +356,29 @@ footer a:hover {
     line-height: normal;
 }
 
-.white {
+#organick .white {
     color: #FFF;
 }
 
-.green {
+#organick .green {
     color: var(--clr-green);
 }
 
-.blue {
+#organick .blue {
     color: var(--clr-blue);
 }
 
-.page-1-box-1 {
+#organick .page-1-box-1 {
     background-image: url('../img/main/page-1-1.svg');
 }
 
-.page-1-box-2 {
+#organick .page-1-box-2 {
     background-image: url('../img/main/page-1-2.svg');
 }
 
 /********************* page-2 styless section ***********************/
 
-.page-2 {
+#organick .page-2 {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -388,7 +388,7 @@ footer a:hover {
     background-color: var(--clr-white-gray);
 }
 
-.page-2-body {
+#organick .page-2-body {
     width: 85%;
     height: 80vh;
     margin-left: 5.5%;
@@ -397,17 +397,17 @@ footer a:hover {
     justify-content: space-between;
 }
 
-.page-2-inner {
+#organick .page-2-inner {
     display: flex;
 }
 
-.page-2-box-2,
-.page-2-box-1 {
+#organick .page-2-box-2,
+#organick .page-2-box-1 {
     height: 72vh;
     width: 47%;
 }
 
-.page-2-box-2 {
+#organick .page-2-box-2 {
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -416,23 +416,23 @@ footer a:hover {
     gap: 1.2vh;
 }
 
-.page-2-box:last-child {
+#organick .page-2-box:last-child {
     margin-top: 10vh;
 }
 
-.page-2-icon-box {
+#organick .page-2-icon-box {
     margin-right: 2vh;
 }
 
-.page-2-inner {
+#organick .page-2-inner {
     margin: .7vh 0;
 }
 
-.page-2-p {
+#organick .page-2-p {
     margin-bottom: 2vh;
 }
 
-.page-2-italic-green {
+#organick .page-2-italic-green {
     margin-top: 9.5vh;
     color: var(--clr-green);
     font-family: var(--ff-italic);
@@ -442,8 +442,8 @@ footer a:hover {
     line-height: normal;
 }
 
-.page-2-h1-small,
-.page-2-h1-blue {
+#organick .page-2-h1-small,
+#organick .page-2-h1-blue {
     color: var(--clr-blue);
     font-family: var(--ff-roboto);
     font-size: 50px;
@@ -452,12 +452,12 @@ footer a:hover {
     line-height: normal;
 }
 
-.page-2-h1-small {
+#organick .page-2-h1-small {
     font-size: 25px;
     font-weight: 800;
 }
 
-.page-2-p {
+#organick .page-2-p {
     color: var(--clr-black);
     font-family: var(--ff-open-sans);
     font-size: 18px;
@@ -466,7 +466,7 @@ footer a:hover {
     line-height: 165.4%;
 }
 
-.page-2-button {
+#organick .page-2-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -486,7 +486,7 @@ footer a:hover {
 
 /********************* page-3 styless section ***********************/
 
-.page-3 {
+#organick .page-3 {
     width: 100%;
     height: 170vh;
     background-color: #fff;
@@ -495,7 +495,7 @@ footer a:hover {
     align-items: center;
 }
 
-.page-3-body {
+#organick .page-3-body {
     text-align: center;
     width: 70%;
     display: flex;
@@ -505,7 +505,7 @@ footer a:hover {
     gap: 4vh;
 }
 
-.page-3-italic-green {
+#organick .page-3-italic-green {
     color: var(--clr-green);
     font-family: var(--ff-italic);
     font-size: 36px;
@@ -514,7 +514,7 @@ footer a:hover {
     line-height: normal;
 }
 
-.page-3-h1-blue {
+#organick .page-3-h1-blue {
     color: var(--clr-blue);
     text-align: center;
     font-family: var(--ff-roboto);
@@ -524,7 +524,7 @@ footer a:hover {
     line-height: normal;
 }
 
-.page-3-product-type {
+#organick .page-3-product-type {
     background-color: var(--clr-blue);
     box-sizing: content-box;
     padding: min(.5vh, .3vw) min(1vh, .5vw);
@@ -541,19 +541,19 @@ footer a:hover {
     top: 2vh;
 }
 
-.page-3-container {
+#organick .page-3-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: min(2vh, 1vw);
 }
 
-.page-3-box {
+#organick .page-3-box {
     position: relative;
     width: 335px;
     height: 483px;
 }
 
-.page-3-product-text-box{
+#organick .page-3-product-text-box{
     text-align: start;
     width: 83%;
     position: absolute;
@@ -561,7 +561,7 @@ footer a:hover {
     left: 1.5vw;
 }
 
-.page-3-learn-more {
+#organick .page-3-learn-more {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -579,7 +579,7 @@ footer a:hover {
     margin-top: 10vh;
 }
 
-.page-3-price-box {
+#organick .page-3-price-box {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -593,7 +593,7 @@ footer a:hover {
     line-height: normal;
 }
 
-.discount {
+#organick .discount {
     position: relative;
     color: #B8B8B8;
     text-align: center;
@@ -604,7 +604,7 @@ footer a:hover {
     line-height: normal;
 }
 
-.discount > .line {
+#organick .discount > .line {
     position: absolute;
     background-color: #B8B8B8;
     left: 0;
@@ -613,7 +613,7 @@ footer a:hover {
     height: .1vh;
 }
 
-.page-3-blue-p {
+#organick .page-3-blue-p {
     color: var(--clr-blue);
     font-family: var(--ff-roboto);
     font-size: 20px;
@@ -622,16 +622,16 @@ footer a:hover {
     line-height: normal;
 }
 
-.page-3-rate-box {
+#organick .page-3-rate-box {
     display: flex;
     justify-content: space-between;
 }
 
-.star-box {
+#organick .star-box {
     display: flex;
 }
 
-.page-3-hr {
+#organick .page-3-hr {
     width: 280px;
     height: 1px;
     margin-top: 1vh;
@@ -640,7 +640,7 @@ footer a:hover {
 }
 
 /********************* page-4 styless section ***********************/
-.page-4 {
+#organick .page-4 {
     width: 100%;
     height: 120vh;
     background-image: url('../img/main/page-4-background.png');
@@ -651,7 +651,7 @@ footer a:hover {
     align-items: center;
 }
 
-.page-4-body {
+#organick .page-4-body {
     width: 60%;
     height: 100vh;
     text-align: center;
@@ -661,18 +661,18 @@ footer a:hover {
     align-items: center;
 }
 
-.page-4-star-box,
-.page-4-cycle-rate-box {
+#organick .page-4-star-box,
+#organick .page-4-cycle-rate-box {
     display: flex;
 }
 
-.page-4-box-container {
+#organick .page-4-box-container {
     position: relative;
     width: 780px;
     height: 400px;
 }
 
-.page-4-box {
+#organick .page-4-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -686,45 +686,45 @@ footer a:hover {
     visibility: hidden;
 }
 
-.page-4-box.page-4-selected-box {
+#organick .page-4-box.page-4-selected-box {
     visibility: visible;
 }
 
-.page-4-star > img {
+#organick .page-4-star > img {
     width: 25px;
     height: 25px;
 }
 
-.page-4-customers-selection-buttons {
+#organick .page-4-customers-selection-buttons {
     display: flex;
     justify-content: center;
     gap: 6px;
     align-items: center;
 }
 
-.page-4-customers-selection-buttons > button[type="button"] {
+#organick .page-4-customers-selection-buttons > button[type="button"] {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background-color: #C4C4C4;
 }
 
-.page-4-customers-selection-buttons > button[type="button"].page-4-selected-button {
+#organick .page-4-customers-selection-buttons > button[type="button"].page-4-selected-button {
     background-color: var(--clr-green);
 }
 
-.page-4-italic-green {
+#organick .page-4-italic-green {
     color: var(--clr-green);
     font-family: var(--ff-italic);
     font-size: 36px;
     font-weight: 400;
 }
 
-.page-4-customer-img {
+#organick .page-4-customer-img {
     border-radius: 5000px;
 }
 
-.page-4-title {
+#organick .page-4-title {
     color: var(--clr-blue);
     text-align: center;
     font-family: var(--ff-roboto);
@@ -733,7 +733,7 @@ footer a:hover {
     font-weight: 800;
 }
 
-.page-4-p {
+#organick .page-4-p {
     color: var(--clr-black);
     font-family: var(--ff-roboto);
     font-size: 15px;
@@ -742,12 +742,12 @@ footer a:hover {
     line-height: 165.4%;
 }
 
-.page-4-p.font-size-18 {
+#organick .page-4-p.font-size-18 {
     width: 780px;
     font-size: 18px;
 }
 
-.page-4-count {
+#organick .page-4-count {
     color: var(--clr-blue);
     text-align: center;
     font-family: var(--ff-roboto);
@@ -757,7 +757,7 @@ footer a:hover {
     line-height: normal;
 }
 
-.page-4-rate-name {
+#organick .page-4-rate-name {
     color: var(--clr-blue);
     text-align: center;
     font-family: var(--ff-open-sans);
@@ -767,7 +767,7 @@ footer a:hover {
     line-height: 165.4%;
 }
 
-.page-4-customer-name {
+#organick .page-4-customer-name {
     color: var(--clr-blue);
     font-family: var(--ff-roboto);
     font-size: 25px;
@@ -776,17 +776,17 @@ footer a:hover {
     line-height: normal;
 }
 
-.page-4-hr {
+#organick .page-4-hr {
     width: 100%;
     height: 1px;
     background-color: var(--clr-gray);
 }
 
-.page-4-cycle-rate-box {
+#organick .page-4-cycle-rate-box {
     gap: 62px;
 }
 
-.page-4-cycle-rate-border {
+#organick .page-4-cycle-rate-border {
     width: 211px;
     height: 211px;
     border: 4px solid var(--clr-green);
@@ -796,7 +796,7 @@ footer a:hover {
     align-items: center;
 }
 
-.page-4-rate-cycle {
+#organick .page-4-rate-cycle {
     display: flex;
     flex-direction: column;
     justify-content: center;

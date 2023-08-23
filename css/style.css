@@ -131,7 +131,7 @@ footer a:hover {
 
 .site-name {
     color: var(--clr-blue);
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: 2vw;
     font-style: normal;
     font-weight: 700;
@@ -140,7 +140,7 @@ footer a:hover {
 
 .text-nav {
     color: var(--clr-blue);
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: max(.6rem, 1.1vw);
     font-style: normal;
     font-weight: 700;
@@ -149,7 +149,7 @@ footer a:hover {
 
 .select-text {
     color: var(--clr-blue);
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: .7vw;
     font-style: normal;
     font-weight: 700;
@@ -217,7 +217,7 @@ footer a:hover {
 
 .cart-count-text {
     color: var(--clr-blue);
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: min(1.9vh, 1vw);
     font-style: normal;
     font-weight: 400;
@@ -265,7 +265,7 @@ footer a:hover {
 
 .header-content-span {
     color: #68A47F;
-    font-family: 'Yellowtail';
+    font-family: var(--ff-italic);
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -273,8 +273,8 @@ footer a:hover {
 }
 
 .header-content-h1 {
-    color: #274C5B;
-    font-family: 'Roboto';
+    color: var(--clr-blue);
+    font-family: var(--ff-roboto);
     font-size: 70px;
     font-style: normal;
     font-weight: 800;
@@ -290,9 +290,9 @@ footer a:hover {
     width: 220px;
     height: 79px;
     border-radius: 16px;
-    background: #EFD372;
-    color: #274C5B;
-    font-family: 'Roboto';
+    background: var(--clr-yellow);
+    color: var(--clr-blue);
+    font-family: var(--ff-roboto);
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -341,7 +341,7 @@ footer a:hover {
 }
 
 .page-1-italic {
-    font-family: 'Yellowtail';
+    font-family: var(--ff-italic);
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -349,7 +349,7 @@ footer a:hover {
 }
 
 .page-1-p {
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: 40px;
     font-style: normal;
     font-weight: 800;
@@ -384,8 +384,8 @@ footer a:hover {
     display: flex;
     justify-content: start;
     align-items: start;
-    fill: #F9F8F8;
-    background-color: #F9F8F8;
+    fill: var(--clr-white-gray);
+    background-color: var(--clr-white-gray);
 }
 
 .page-2-body {
@@ -434,8 +434,8 @@ footer a:hover {
 
 .page-2-italic-green {
     margin-top: 9.5vh;
-    color: #7EB693;
-    font-family: 'Yellowtail';
+    color: var(--clr-green);
+    font-family: var(--ff-italic);
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -444,8 +444,8 @@ footer a:hover {
 
 .page-2-h1-small,
 .page-2-h1-blue {
-    color: #274C5B;
-    font-family: 'Roboto';
+    color: var(--clr-blue);
+    font-family: var(--ff-roboto);
     font-size: 50px;
     font-style: normal;
     font-weight: 800;
@@ -459,7 +459,7 @@ footer a:hover {
 
 .page-2-p {
     color: var(--clr-black);
-    font-family: 'Open Sans';
+    font-family: var(--ff-open-sans);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -477,7 +477,7 @@ footer a:hover {
     background-color: var(--clr-blue);
     border-radius: min(1.5vh, .8vw);
     color: #FFF;
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -506,8 +506,8 @@ footer a:hover {
 }
 
 .page-3-italic-green {
-    color: #7EB693;
-    font-family: 'Yellowtail';
+    color: var(--clr-green);
+    font-family: var(--ff-italic);
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -515,9 +515,9 @@ footer a:hover {
 }
 
 .page-3-h1-blue {
-    color: #274C5B;
+    color: var(--clr-blue);
     text-align: center;
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: 50px;
     font-style: normal;
     font-weight: 800;
@@ -531,7 +531,7 @@ footer a:hover {
     border-radius: min(.9vh, .4vw);
     color: #FFF;
     text-align: center;
-    font-family: 'Open Sans';
+    font-family: var(--ff-open-sans);
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -569,7 +569,7 @@ footer a:hover {
     width: 11.5vw;
     height: 8vh;
     color: white;
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -586,7 +586,7 @@ footer a:hover {
     gap: .5vw;
     color: var(--clr-blue);
     text-align: center;
-    font-family: 'Open Sans';
+    font-family: var(--ff-open-sans);
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -597,7 +597,7 @@ footer a:hover {
     position: relative;
     color: #B8B8B8;
     text-align: center;
-    font-family: 'Open Sans';
+    font-family: var(--ff-open-sans);
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -615,7 +615,7 @@ footer a:hover {
 
 .page-3-blue-p {
     color: var(--clr-blue);
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -710,12 +710,12 @@ footer a:hover {
 }
 
 .page-4-customers-selection-buttons > button[type="button"].page-4-selected-button {
-    background-color: #7EB693;
+    background-color: var(--clr-green);
 }
 
 .page-4-italic-green {
     color: var(--clr-green);
-    font-family: 'Yellowtail';
+    font-family: var(--ff-italic);
     font-size: 36px;
     font-weight: 400;
 }
@@ -727,7 +727,7 @@ footer a:hover {
 .page-4-title {
     color: var(--clr-blue);
     text-align: center;
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: 50px;
     font-style: normal;
     font-weight: 800;
@@ -735,7 +735,7 @@ footer a:hover {
 
 .page-4-p {
     color: var(--clr-black);
-    font-family: 'Open Sans';
+    font-family: var(--ff-roboto);
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -750,7 +750,7 @@ footer a:hover {
 .page-4-count {
     color: var(--clr-blue);
     text-align: center;
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: 50px;
     font-style: normal;
     font-weight: 800;
@@ -760,7 +760,7 @@ footer a:hover {
 .page-4-rate-name {
     color: var(--clr-blue);
     text-align: center;
-    font-family: 'Open Sans';
+    font-family: var(--ff-open-sans);
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -769,7 +769,7 @@ footer a:hover {
 
 .page-4-customer-name {
     color: var(--clr-blue);
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: 25px;
     font-style: normal;
     font-weight: 600;
@@ -789,7 +789,7 @@ footer a:hover {
 .page-4-cycle-rate-border {
     width: 211px;
     height: 211px;
-    border: 4px solid #7EB693;
+    border: 4px solid var(--clr-green);
     border-radius: 211px;
     display: flex;
     justify-content: center;
@@ -835,7 +835,7 @@ footer a:hover {
 
 .page-5-italic-green {
     color: var(--clr-green);
-    font-family: 'Yellowtail';
+    font-family: var(--ff-italic);
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -844,7 +844,7 @@ footer a:hover {
 
 .page-5-h1-white {
     color: white;
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: 50px;
     font-style: normal;
     font-weight: 800;
@@ -856,8 +856,8 @@ footer a:hover {
     border-radius: 16px;
     width: 256px;
     height: 79px;
-    color: #274C5B;
-    font-family: 'Roboto';
+    color: var(--clr-blue);
+    font-family: var(--ff-roboto);
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -908,7 +908,7 @@ footer a:hover {
 
 .page-6-italic-green {
     color: var(--clr-green);
-    font-family: 'Yellowtail';
+    font-family: var(--ff-italic);
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -917,7 +917,7 @@ footer a:hover {
 
 .page-6-h1 {
     color: var(--clr-blue);
-    font-family: 'Roboto';
+    font-family:  var(--ff-roboto);
     font-size: 50px;
     font-style: normal;
     font-weight: 800;
@@ -926,7 +926,7 @@ footer a:hover {
 
 .page-6-span {
     color: var(--clr-blue);
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: 25px;
     font-style: normal;
     font-weight: 500;
@@ -935,7 +935,7 @@ footer a:hover {
 
 .page-6-p {
     color: var(--clr-black);
-    font-family: 'Open Sans';
+    font-family: var(--ff-open-sans);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -993,14 +993,95 @@ footer a:hover {
     background-color: white;
     border-radius: 20px;
     color: var(--clr-blue);
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: 25px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 /********************* page-8 styless section ***********************/
+.page-8 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.page-8-body {
+    width: 70%;
+    height: 60vh;
+}
+
+.page-8-content-box,
+.page-8-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-8-date-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-8-box-1,
+.page-8-box-2 {
+    width: 48.5%;
+    height: 50vh;
+    border-radius: 1.5vw;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page-8-box-1 {
+    background-image: url('../img/main/page-8-background-1.svg');
+}
+.page-8-box-2 {
+    background-image: url('../img/main/page-8-background-2.svg');
+}
+
+/* fonts */
+
+.page-8-italic-green {
+    color: var(--clr-green);
+    font-family: var(--ff-italic);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.page-8-content-h1 {
+    color: var(--clr-blue);
+    font-family: var(--ff-roboto);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.page-8-date-span-1 {
+    color: var(--clr-blue);
+    text-align: center;
+    font-family: var(--ff-roboto);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.page-8-date-span-2 {
+    color: var(--clr-blue);
+    font-family: var(--ff-roboto);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
 
 /**************************************************************************************************/
 
@@ -1107,9 +1188,8 @@ footer a:hover {
 }
 
 .footer-subscribe-text {
-    color: white;
     color: #FFF;
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: min(4.89vh, 2.69vw);
     font-style: normal;
     font-weight: 800;
@@ -1118,7 +1198,7 @@ footer a:hover {
 
 .footer-h1 {
     color: var(--clr-blue);
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: min(3.1vh, 1.59vw);
     font-style: normal;
     font-weight: 700;
@@ -1149,8 +1229,8 @@ footer a:hover {
 }
 
 .footer-p {
-    color: #525C60;
-    font-family: 'Open Sans';
+    color: var(--clr-black);
+    font-family: var(--ff-open-sans);
     font-size: min(1.8vh, .9vw);
     font-style: normal;
     font-weight: 400;
@@ -1158,8 +1238,8 @@ footer a:hover {
 }
 
 .footer-span {
-    color: #525C60;
-    font-family: 'Open Sans';
+    color: var(--clr-black);
+    font-family: var(--ff-open-sans);
     font-size: min(1.8vh, .9vw);
     font-style: normal;
     font-weight: 700;
@@ -1169,7 +1249,7 @@ footer a:hover {
 .footer-hr {
     width: 100%;
     height: .1px;
-    background-color: #D4D4D4;
+    background-color: var(--clr-gray);
 }
 
 .footer-form-button {
@@ -1178,7 +1258,7 @@ footer a:hover {
     border-radius: min(1.5vh, .8vw);
     background-color: var(--clr-blue);
     color: white;
-    font-family: 'Roboto';
+    font-family: var(--ff-roboto);
     font-size: min(2vh, 1vw);
     font-style: normal;
     font-weight: 700;
@@ -1216,8 +1296,8 @@ footer a:hover {
     width: min(32vh, 17vw);
     height: min(7.5vh, 4.3vw);
     border-radius: min(1.5vh, .8vw);
-    color: #D4D4D4;
-    font-family: 'Roboto';
+    color: var(--clr-gray);
+    font-family: var(--ff-roboto);
     font-size: min(1.8vh, .9vw);
     font-style: italic;
     font-weight: 400;

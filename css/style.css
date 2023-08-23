@@ -319,9 +319,9 @@ footer a:hover {
 .page-1-body {
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 3vh;
+    gap: 2vw;
 }
 
 .page-1-box-2,
@@ -943,7 +943,62 @@ footer a:hover {
 }
 
 /********************* page-7 styless section ***********************/
+.page-7 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1F8F4;
+}
 
+.page-7-body {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-7-box-1,
+.page-7-box-2,
+.page-7-box-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31.5vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-7-box-1 {
+    background-image: url('../img/main/page-7-background-img-1.svg');
+}
+
+.page-7-box-2 {
+    background-image: url('../img/main/page-7-background-img-2.svg');
+}
+
+.page-7-box-3 {
+    background-image: url('../img/main/page-7-background-img-3.svg');
+}
+
+.page-7-content {
+    width: 320px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    color: var(--clr-blue);
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 /********************* page-8 styless section ***********************/
 
 

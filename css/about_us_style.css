@@ -256,7 +256,7 @@ footer a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: var(--clr-white-green);
     width: 100%;
     position: relative;
 }
@@ -319,7 +319,7 @@ footer a:hover {
 main h3 {
     color: var(--clr-green);
     font-family: Yellowtail;
-    font-size: 36px;
+    font-size: min(9vw, 36px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -327,7 +327,7 @@ main h3 {
 .big-p {
     color: var(--clr-blue);
     font-family: Roboto;
-    font-size: 50px;
+    font-size: min(50px, 12vw);
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -535,7 +535,7 @@ h5 {
 }
 
 .experts-grid {
-    margin-top: 3%;
+    margin: 3% 0;
     display: grid;
     grid-template-columns: 32% 32% 32%;
     gap: 2%;
@@ -546,12 +546,13 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: start;
-    min-height: 55vh;
+    max-height: 55vh;
     background-color: var(--clr-white-gray);
     border-radius: 5%;
 }
 
 .expert-box>img {
+    object-fit: contain;
     border-radius: 5% 5% 0 0;
     width: 100%;
 
@@ -1034,7 +1035,7 @@ h5 {
     }
 
     .decide-img {
-        margin-top: 20px;
+        margin-top: 0px;
         margin-left: auto;
         margin-right: auto;
         width: 70%;
@@ -1175,8 +1176,39 @@ h5 {
         max-width: 90%;
     }
 
+    .experts{
+        min-height: 200vh;
+    }
+
+    .experts-grid {
+        grid-template-columns: 255px;
+        justify-content: center;
+        padding: 20px 0;
+    }
     
 } 
+
+
+@media (max-width: 480px) {
+
+    .grid-box {
+        justify-content: center;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 255px;
+        grid-template-rows: 250px 250px 250px 250px ;
+        gap: 20px;
+    }
+
+    .head-baner> img{
+        display: none;
+    }
+
+    .head-baner {
+        padding: 60px 0;
+    }
+} 
+
 
 @media (max-width:420px) {
     .decide-container-small{
@@ -1184,7 +1216,15 @@ h5 {
     }
 
     .decide-span>span {
-        font-size: 15px;
+        font-size: 17px;
+    }
+    .icon-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .decide-img {
+        width: 260px;
     }
 }
 

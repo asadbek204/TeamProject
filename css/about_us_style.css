@@ -447,7 +447,7 @@ main h3 {
     white-space: nowrap;
     color: #274C5B;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: (20px);
     font-style: normal;
     font-weight: 500;
     line-height: normal; 
@@ -458,6 +458,7 @@ main h3 {
 }
 
 .decide-img>img {
+    object-fit: contain;
     border-radius: 5%;
     margin-left: 5%;
     width: 95%;
@@ -614,15 +615,16 @@ h5 {
  .offers-grid-box {
     justify-content: center;
     display: grid;
-    grid-template-columns: 23% 23% 23% 23% ;
+    grid-template-columns: 320px 320px 320px 320px  ;
     gap: 2.2%;
     margin-top: 3%;
     width: 100%;
-    height: 320px;
+    height: 380px;
 
  }
 
  .offers-box {
+    min-width: 320px;
     border-radius: 10%;
     display: flex;
     flex-direction: column;
@@ -643,10 +645,9 @@ h5 {
 .offer-img > img{
     border-radius: 10%;
     margin: 0 auto;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 1;
+    /* position: absolute; */
+    height: 100%;
+    object-fit: contain;
 }
 
 .offers-box:nth-child(3)>.offer-img{
@@ -656,10 +657,6 @@ h5 {
 }
 
 
-.offers-box:nth-child(3)>.offer-img>img{
-    width: 93%;
-}
-
 
 .offers-box:nth-child(4)>.offer-img{
     display: flex;
@@ -667,9 +664,7 @@ h5 {
     justify-content: center;
 }
 
-.offers-box:nth-child(4)>.offer-img>img{
-    width: 70%;
-}
+
 
 .offers-box:nth-child(4)>.offer-img {
     width: 100;
@@ -919,6 +914,18 @@ h5 {
 /* responsiveness part */
 
 
+
+@media (max-width: 1394px) {
+    .offers-content{
+        padding-top: 20px;
+    }
+    .offers-grid-box {
+        grid-template-columns: 320px 320px;
+        justify-content: center;
+        min-height: 750px;
+
+    }
+}
 @media (max-width: 1132px) {
     .my-container {
         width: 85%;
@@ -1027,10 +1034,16 @@ h5 {
     }
 
     .decide-img {
-        margin: auto 0;
-        width: 100%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
     
     }
+    .decide-img>img {
+        margin-left: 0;
+    }
+
     .decide-container-small {
         max-width: 75%;
     
@@ -1138,11 +1151,41 @@ h5 {
     .experts-grid {
         grid-template-columns: 40% 40%;
         justify-content: center;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .offers-box {
+        min-width: 240px;
+        height: 300px;
     }
 
     .offers-grid-box {
-        grid-template-columns: 40% 40%;
-        justify-content: center;
+        grid-template-columns: 240px;
+        min-height: 1300px;
+        gap: 1.5%;
+    }
+    .decide-span {
+        width: 80%;
+    }
+
+    .decide-container-small{
+        max-width: 90%;
+    }
+
+    
+} 
+
+@media (max-width:420px) {
+    .decide-container-small{
+        max-width: 100%;
+    }
+
+    .decide-span>span {
+        font-size: 15px;
     }
 }
+
 /**************************************************************************************************/

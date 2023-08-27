@@ -264,12 +264,18 @@ footer a:hover {
     height: auto;
     width: 100%;
 }
+.head-img2 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
 .head-text {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     color: #274C5B;
     font-family: Roboto;
-    font-size: min(8vw, 70px);
+    font-size: min(10vw, 70px);
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -1200,13 +1206,14 @@ h5 {
         gap: 20px;
     }
 
-    .head-baner> img{
+    .head-baner img{
         display: none;
     }
 
     .head-baner {
         padding: 60px 0;
     }
+    
 } 
 
 

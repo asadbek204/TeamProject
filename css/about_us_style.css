@@ -45,28 +45,24 @@ button:hover {
 
 /*********** global hover effect section *************/
 header a,
-header label,
 footer a {
     transition: 250ms ease all;
 }
 
-header label:hover,
 header a:hover,
 footer a:hover {
     cursor: pointer;
-    color: #b7f3cd;
-    text-shadow: 0px 2px 2px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-gray);
-    /* text-shadow: -1px 1px 5px #91dbefb5; */
+    color: green;
 }
 
 .site-logo-box:hover .site-name {
     cursor: pointer;
-    color: #88f5b0;
-    text-shadow: 0px 1px 1px black, 0 0 10px var(--clr-black), 0 0 5px var(--clr-green);
+    color: #038432b9;
 }
 
 .site-logo-box:hover .site-logo {
-    filter: invert(25%) sepia(52%) saturate(416%) hue-rotate(151deg) brightness(50%) contrast(94%) drop-shadow(0px 1px 4px #fff) drop-shadow(0 0 2px var(--clr-white-green)) drop-shadow(0 0 3px var(--clr-green));
+    /* filter: brightness(0) invert(1) drop-shadow(0px 0px 2px black) drop-shadow(0 0 10px var(--clr-black)) drop-shadow(0 0 2px var(--clr-green)); */
+    filter: invert(25%) sepia(52%) saturate(416%) hue-rotate(151deg) brightness(50%) contrast(94%); /*drop-shadow(-2px 2px 10px var(--clr-green)) ;*/
 }
 
 /*********************************** header styless part ******************************************/
@@ -99,7 +95,6 @@ footer a:hover {
 }
 
 .site-logo {
-    transition: 200ms all ease;
     width: 1.9vw;
     height: auto;
 }
@@ -136,7 +131,6 @@ footer a:hover {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    transition: 200ms ease all;
 }
 
 .text-nav {
@@ -240,7 +234,6 @@ footer a:hover {
     width: min(1.55vw, 2.31vh);
     height: min(1.4vw, 2.299vh);
 }
-
 /******************************************************************/
 
 /************************ container styless ***********************/
@@ -711,13 +704,18 @@ h5 {
 /**************************************************************************************************/
 
 /*********************************** footer styless part ******************************************/
+.default-site-footer a:hover {
+    color: green;
+    text-shadow: -.1px .1px .1px black;
+}
+
+/*****************************************************************/
 .default-site-footer-box {
     gap: 2.8vw;
 }
 
 .footer-container {
-    margin: 0 auto;
-    width: 70%;
+    width: 100%;
     height: 70vh;
     gap: 10vh;
 }
@@ -750,6 +748,10 @@ h5 {
     gap: 2vh;
 }
 
+#small-logo-box {
+    width: 11vw;
+}
+
 .footer-copyright-box {
     width: 100%;
     height: min(5vh,3.2vw);
@@ -767,6 +769,7 @@ h5 {
 .text-align-center {
     width: 26vw;
     text-align: center;
+    align-items: center;
 }
 
 .text-align-start {
@@ -885,10 +888,12 @@ h5 {
 }
 
 .footer-form-input:focus{
-    outline: var(--clr-black) solid 1px;
+    outline: none;
     color: #000;
     background-color: rgb(241, 241, 241);
     box-shadow: -1px 3px 10px #fff;
+    font-style: normal;
+    outline: 1px solid var(--clr-blue);
 }
 
 .footer-form-container:hover {

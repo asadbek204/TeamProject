@@ -468,7 +468,7 @@ main h3 {
     margin: 10vh auto;
     width: 80%;
     background-color: var(--clr-white-gray);
-    min-height: 30vh;
+    height: 30vh;
 }
 .grid-box {
     justify-content: center;
@@ -545,9 +545,10 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: start;
-    max-height: 55vh;
+    min-height: 55vh;
     background-color: var(--clr-white-gray);
     border-radius: 5%;
+    transition: 250ms ease all;
 }
 
 .expert-box>img {
@@ -582,6 +583,10 @@ h5 {
     scale: 0.85;
 }
 
+.expert-box:hover{
+    background-color: #fff;
+    box-shadow: 0px 10px 100px 2px rgba(0, 0, 0, 0.25);
+}
 /* end of experts section */
 
 

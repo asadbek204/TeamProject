@@ -312,7 +312,7 @@ footer a:hover {
     position: relative;
     border-radius: 1.5vw;
     height: 480px;
-    max-width: 300px;
+    max-width: 340px;
 
 }
 .products-grid>div:nth-child(2){
@@ -676,7 +676,7 @@ footer a:hover {
         margin-bottom: 100vh;
     }
     .products-grid>div {
-        max-width: 550px;
+        max-width: 600px;
         height: 400px;
     }
 

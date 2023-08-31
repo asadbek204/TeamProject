@@ -671,6 +671,7 @@ footer a:hover {
 
 @media (max-width:540px) {
     .products-grid{
+        width: 80%;
         grid-template-columns: auto;
         margin-bottom: 100vh;
     }
@@ -682,7 +683,9 @@ footer a:hover {
 }   
 
 @media (max-width: 480px) {
-
+    .products-grid{
+        width: 90%;
+    }
     .head-baner img{
         display: none;
     }

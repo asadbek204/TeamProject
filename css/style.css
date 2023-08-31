@@ -97,6 +97,7 @@ footer a:hover {
 .site-logo {
     width: 1.9vw;
     height: auto;
+    transition: .2s ease;
 }
 
 /****************************************/
@@ -131,6 +132,7 @@ footer a:hover {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: .2s ease;
 }
 
 .text-nav {
@@ -515,6 +517,7 @@ footer a:hover {
 }
 
 .select-box-menu-list-item {
+    position: absolute;
     width: 90px;
     margin-top: 2px;
     color: var(--clr-blue);

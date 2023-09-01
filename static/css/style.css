@@ -594,7 +594,6 @@ footer a:hover {
 	border-bottom: 10px solid transparent;
 }
 
-.menu__arrow {}
 
 body.mouse .menu__list>.select-box:hover .sub-menu__list {
 	display: flex;

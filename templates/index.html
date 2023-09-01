@@ -10,54 +10,83 @@
         crossorigin="anonymous" 
         referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
     <title>Document</title>
 </head>
-<body class="mouse">
+<body id="test">
     <header class="default-site-header">
         <!-- navigation bar -->
-        <nav class="default-site-nav">
-            <div class="nav-box-1 menu">
-                <a href="" class="site-logo-box">
-                    <!-- site logo -->
-                    <img src="img/defaults/logo.svg" alt="" class="site-logo">
-                    <h1 class="site-name">Organick</h1>
-                </a>
-                <div class="text-nav-box menu__list">
-                    <a href="" class="text-nav">Home</a>
-                    <a href="" class="text-nav">About</a>
-                    <!-- select box -->
-                    <div class="select-box">
-                        <a href="" class="text-nav menu__link">Pages</a>
-                        <span class="menu__arrow arrow"></span>
-                        <div class="sub-menu__list">
-                            <a href="" class="select-box-menu-list-item" id="select-item-1">About</a>
-                            <a href="" class="select-box-menu-list-item" id="select-item-1">Shop</a>
-                            <a href="" class="select-box-menu-list-item" id="select-item-1">Organick</a>
-                            <a href="" class="select-box-menu-list-item" id="select-item-1">Service</a>
-                            <a href="" class="select-box-menu-list-item" id="select-item-1">Portfolio</a>
-                            <a href="" class="select-box-menu-list-item" id="select-item-1">Team</a>
-                            <a href="" class="select-box-menu-list-item" id="select-item-1">Blog</a>
-                            <a href="" class="select-box-menu-list-item" id="select-item-1">Contact</a>
+        <div class="header-nav-container">
+            <nav class="default-site-nav">
+                <div class="nav-box-1 menu">
+                    <a href="" class="site-logo-box">
+                        <!-- site logo -->
+                        <img src="{{ url_for('static', filename='img/defaults/logo.svg') }}" alt="" class="site-logo">
+                        <h1 class="site-name">Organick</h1>
+                    </a>
+                    <div class="text-nav-box menu__list">
+                        <a href="" class="text-nav">Home</a>
+                        <a href="" class="text-nav">About</a>
+                        <!-- select box -->
+                        <div class="select-box">
+                            <a href="#" class="text-nav menu__link">Pages<span class="menu__arrow arrow"></span></a>
+                            <div class="sub-menu__list">
+                                <a href="" class="select-box-menu-list-item" id="select-item-1">About</a>
+                                <a href="" class="select-box-menu-list-item" id="select-item-2">Shop</a>
+                                <a href="" class="select-box-menu-list-item" id="select-item-3">Organick</a>
+                                <a href="" class="select-box-menu-list-item" id="select-item-4">Service</a>
+                                <a href="" class="select-box-menu-list-item" id="select-item-5">Portfolio</a>
+                                <a href="" class="select-box-menu-list-item" id="select-item-6">Team</a>
+                                <a href="" class="select-box-menu-list-item" id="select-item-7">Blog</a>
+                                <a href="" class="select-box-menu-list-item" id="select-item-8">Contact</a>
+                                <a href="" class="select-box-menu-list-item display-none" id="select-item-9">Shop</a>
+                                <a href="" class="select-box-menu-list-item display-none" id="select-item-10">Projects</a>
+                                <a href="" class="select-box-menu-list-item display-none" id="select-item-11">News</a>
+                            </div>
                         </div>
+                        <a href="" class="text-nav" id="for-pc-1">Shop</a>
+                        <a href="" class="text-nav" id="for-pc-2">Projects</a>
+                        <a href="" class="text-nav" id="for-pc-3">News</a>
                     </div>
-                    <a href="" class="text-nav">Shop</a>
-                    <a href="" class="text-nav">Projects</a>
-                    <a href="" class="text-nav">News</a>
                 </div>
+                <div class="nav-box-2">
+                    <!-- navigation search box -->
+                    <div class="search-box">
+                        <input type="text" class="search-input">
+                        <button class="search-button"><img src="{{ url_for('static', filename='img/defaults/search.svg') }}" alt="" class="search-icon"></button>
+                    </div>
+                    <div class="nav-cart-box">
+                        <button class="cart-icon"><img src="{{ url_for('static', filename='img/defaults/cart.svg') }}" alt=""></button>
+                        <span class="cart-count-text">Cart (0)</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-nav-box-mobile menu__list">
+                <a href="" class="text-nav">Home</a>
+                <a href="" class="text-nav">About</a>
+                <!-- select box -->
+                <div class="select-box">
+                    <a href="#" class="text-nav menu__link">Pages<span class="menu__arrow arrow"></span></a>
+                    <div class="sub-menu__list">
+                        <a href="" class="select-box-menu-list-item" id="select-item-1">About</a>
+                        <a href="" class="select-box-menu-list-item" id="select-item-2">Shop</a>
+                        <a href="" class="select-box-menu-list-item" id="select-item-3">Organick</a>
+                        <a href="" class="select-box-menu-list-item" id="select-item-4">Service</a>
+                        <a href="" class="select-box-menu-list-item" id="select-item-5">Portfolio</a>
+                        <a href="" class="select-box-menu-list-item" id="select-item-6">Team</a>
+                        <a href="" class="select-box-menu-list-item" id="select-item-7">Blog</a>
+                        <a href="" class="select-box-menu-list-item" id="select-item-8">Contact</a>
+                        <a href="" class="select-box-menu-list-item display-none" id="select-item-9">Shop</a>
+                        <a href="" class="select-box-menu-list-item display-none" id="select-item-10">Projects</a>
+                        <a href="" class="select-box-menu-list-item display-none" id="select-item-11">News</a>
+                    </div>
+                </div>
+                <a href="" class="text-nav" id="for-pc-1">Shop</a>
+                <a href="" class="text-nav" id="for-pc-2">Projects</a>
+                <a href="" class="text-nav" id="for-pc-3">News</a>
             </div>
-            <div class="nav-box-2">
-                <!-- navigation search box -->
-                <div class="search-box">
-                    <input type="text" class="search-input">
-                    <button class="search-button"><img src="img/defaults/search.svg" alt="" class="search-icon"></button>
-                </div>
-                <div class="nav-cart-box">
-                    <button class="cart-icon"><img src="img/defaults/cart.svg" alt=""></button>
-                    <span class="cart-count-text">Cart (0)</span>
-                </div>
-            </div>
-        </nav>
+        </div>
         <!-- end of navigation bar -->
         <div class="header-body">
             <div class="header-container">
@@ -105,10 +134,10 @@
                 </div>
                 <div class="footer-vertical-hr"></div>
                 <div class="footer-content-box text-align-center">
-                    <div class="site-logo-box" id="small-logo-box">
+                    <div class="site-logo-box-foot" id="small-logo-box">
                         <!-- site logo -->
-                        <img src="img/defaults/logo.svg" alt="" class="site-logo">
-                        <h1 class="site-name">Organick</h1>
+                        <img src="{{ url_for('static', filename='img/defaults/logo.svg') }}" alt="" class="site-logo-foot">
+                        <h1 class="site-name-foot">Organick</h1>
                     </div>
                     <p class="footer-p">
                         Simply dummy text of the printing and typesetting industry. <br>
@@ -141,6 +170,5 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="js/script.js"></script> -->
 </body>
 </html>

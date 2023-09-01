@@ -6,21 +6,21 @@ let isMobile = {
 	Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
 	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
 };
-		let body=document.querySelector('body');
-if(isMobile.any()){
-		body.classList.add('touch');
-		let arrow=document.querySelectorAll('.arrow');
-	for(i=0; i<arrow.length; i++){
-			let thisLink=arrow[i].previousElementSibling;
-			let subMenu=arrow[i].nextElementSibling;
-			let thisArrow=arrow[i];
 
-			thisLink.classList.add('parent');
-		arrow[i].addEventListener('click', function(){
-			subMenu.classList.toggle('open');
-			thisArrow.classList.toggle('active');
-		});
+let body=document.getElementById('test');
+console.log(body)
+if(isMobile.any()){
+	console.log('mobile')
+	body.classList.add('touch');
+	for (let i = 1; i <=3; i++) {
+		let for_pc = document.getElementById(`for-pc-${i}`)
+		for_pc.classList.add('display-none')
 	}
-}else{
+	for (let i = 9; i <= 11; i++) {
+		el = document.getElementById(`select-item-${i}`)
+		el.classList.remove('display-none')
+	}
+}
+else{
 	body.classList.add('mouse');
 }

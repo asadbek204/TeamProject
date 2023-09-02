@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <link rel="icon" type="" sizes="" href="{{ url_for('static', filename='img/defaults/logo.svg')}}">
+</head>
+<body id="body">
+    <header class="default-site-header">
+        <!-- navigation bar -->
+        <div class="header-nav-container">
+            <nav class="default-site-nav">
+                <div class="nav-box-1 menu">
+                    <a href="" class="site-logo-box">
+                        <!-- site logo -->
+                        <img src="{{ url_for('static', filename='img/defaults/logo.svg') }}" alt="" class="site-logo">
+                        <h1 class="site-name">Organick</h1>
+                    </a>
+                    <div class="text-nav-box menu__list">
+                        <a href="" class="text-nav">Home</a>
+                        <a href="" class="text-nav">About</a>
+                        <!-- select box -->
+                        <div class="select-box">
+                            <a href="#" class="text-nav menu__link">Pages<span class="menu__arrow"></span></a>
+                            <div class="sub-menu__list">
+                                {% for url, name in pages -%}
+                                <a href="{{ url_for(url) }}" class="select-box-menu-list-item">{{ name }}</a>
+                                {% endfor -%}
+                            </div>
+                        </div>
+                        <a href="" class="text-nav">Shop</a>
+                        <a href="" class="text-nav">Projects</a>
+                        <a href="" class="text-nav">News</a>
+                    </div>
+                </div>
+                <div class="nav-box-2">
+                    <!-- navigation search box -->
+                    <div class="search-box">
+                        <input type="text" class="search-input">
+                        <button class="search-button"><img src="{{ url_for('static', filename='img/defaults/search.svg') }}" alt="" class="search-icon"></button>
+                    </div>
+                    <div class="nav-cart-box">
+                        <button class="cart-icon"><img src="{{ url_for('static', filename='img/defaults/cart.svg') }}" alt=""></button>
+                        <span class="cart-count-text">Cart (0)</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-nav-box-mobile menu__list">
+                <a href="{{ url_for('home') }}" class="text-nav">Home</a>
+                <a href="{{ url_for('about') }}" class="text-nav">About</a>
+                <!-- select box -->
+                <div class="select-box"  id="pages-selector">
+                    <a href="#" class="text-nav menu__link">Pages<span class="menu__arrow arrow"  id="arrow"></span></a>
+                    <div class="sub-menu__list"  id="sub-menu-list">
+                    {% for url, name in pages -%}
+                        <a href="{{ url_for(url) }}" class="select-box-menu-list-item-mobile">{{ name }}</a>
+                    {% endfor -%}    
+                    </div>
+                </div>
+                <a href="{{ url_for('shop') }}" class="text-nav">Shop</a>
+                <a href="{{ url_for('projects') }}" class="text-nav">Projects</a>
+                <a href="{{ url_for('news') }}" class="text-nav">News</a>
+            </div>
+        </div>
+        <!-- end of navigation bar -->
+        {% block header_container -%}
+
+        {% endblock -%}
+    </header>
+
+    <!-- main block -->
+    {% block main_content -%}
+
+    {% endblock -%}
+
+    <!-- end of main block -->
+    <footer class="default-site-footer {{ haven_t_form }}">
+        <div class="footer-container">
+            <!----------------------------- footer subscribe form -------------------------->
+            {% if not haven_t_form %}
+            <div class="default-site-footer-box">
+                <div class="footer-form-container">
+                    <div class="container-inner-box">
+                        <h1 class="footer-subscribe-text">Subscribe to our Newsletter</h1>
+                    </div>
+                    <form class="footer-form">
+                        <input type="email" name="" id="" placeholder="Your Email Address" class="footer-form-input">
+                        <button type="button" class="footer-form-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            {% endif %}
+            <!------------------------------------------------------------------------------>
+
+            <!------------------------------- footer about site box ------------------------>
+            <div class="default-site-footer-box">
+                <div class="footer-content-box text-align-end">
+                    <h1 class="footer-h1">Contact Us</h1>
+                    <div class="footer-text-box">
+                        <span class="footer-span">Email</span>
+                        <a href="mailto:needhelp@Organia.com" class="footer-p">needhelp@Organia.com</a>
+                    </div>
+                    <div class="footer-text-box">
+                        <span class="footer-span">Phone</span>
+                        <a href="tel:+666 888 888" class="footer-p">666 888 888</a>
+                    </div>
+                    <div class="footer-text-box">
+                        <span class="footer-span">Address</span>
+                        <a href="" class="footer-p">88 road, borklyn street, USA</a>
+                    </div>
+                </div>
+                <div class="footer-vertical-hr"></div>
+                <div class="footer-content-box text-align-center">
+                    <div class="site-logo-box-foot" id="small-logo-box">
+                        <!-- site logo -->
+                        <img src="{{ url_for('static', filename='img/defaults/logo.svg') }}" alt="" class="site-logo-foot">
+                        <h1 class="site-name-foot">Organick</h1>
+                    </div>
+                    <p class="footer-p">
+                        Simply dummy text of the printing and typesetting industry. <br>
+                        Lorem Ipsum simply dummy text of the printing 
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com" id="logo" class="fa-brands fa-instagram footer-social-icon"></a>
+                        <a href="https://facebook.com" id="logo" class="fa-brands fa-facebook footer-social-icon"></a>
+                        <a href="https://twitter.com/Twitter" id="logo" class="fa-brands fa-twitter footer-social-icon"></a>
+                        <a href="https://pinterest.com" id="logo" class="fa-brands fa-pinterest footer-social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-vertical-hr"></div>
+                <div class="footer-content-box text-align-start">
+                    <h1 class="footer-h1">Utility Pages</h1>
+                    <div class="footer-text-box-2">
+                        <a href="" class="footer-p">Style Guide</a>
+                        <a href="{{ url_for('not_found') }}" class="footer-p">404 Not Found</a>
+                        <a href="" class="footer-p">Password Protected</a>
+                        <a href="" class="footer-p">Licences</a>
+                        <a href="" class="footer-p">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright-box">
+            <div class="footer-hr"></div>
+            <div class="footer-copyright">
+                <p class="footer-cp-p">Copyright &#169;</p><span class="footer-cp-span">Organick</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

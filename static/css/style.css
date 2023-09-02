@@ -1218,6 +1218,101 @@ footer a:hover {
     font-size: 4vw;
 }
 
+
+/*********************************** 404 not found styless part **************************************/
+.header-container-404 {
+    width: 100%;
+    height: calc(100svh - min(10.5vw, 20vh));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container-404 .text button {
+    width: 15vw;
+    height: 4vw;
+    gap: 10px;
+    border-radius: 16px;
+    background-color: var(--clr-blue);
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff-roboto);
+    font-size: 1.1vw;
+    line-height: 1.1vw;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .7vw;
+}
+
+.header-container-404 .text img {
+    width: 1vw;
+    height: 1vw;
+}
+
+.header-container-404 .text h1 {
+    font-size: 15.5vw;
+    line-height: 12vw;
+    color: #8FA8A8;
+}
+
+.header-container-404 .text h2 {
+    font-family: var(--ff-roboto);
+    font-weight: 800;
+    font-size: 3.6vw;
+    padding-right: 1vw;
+    color: var(--clr-blue);
+}
+
+
+.header-container-404 .text p {
+    font-family: var(--ff-open-sans);
+    font-weight: 600;
+    font-size: .91vw;
+    line-height: 50px;
+    color: var(--clr-black);
+    margin-bottom: 30px;
+}
+
+.header-container-404 .text button:hover {
+    background-color: yellow;
+    color: black;
+    transition: 2s ease;
+    box-shadow:#000;
+}
+
+.button-box-404 {
+    display: flex;
+    justify-content: start;
+    width: 80%;
+}
+.not-found{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.not-found .text {
+    width: 48.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.header-container-404{
+    background-image: url('../img/404/header-bg-img.png');
+    background-size: cover;
+    background-position: 10%;
+    background-repeat: no-repeat;
+}
+
 /*********************************** footer styless part ******************************************/
 /******************* footer hover section ************************/
 .default-site-footer a:hover {
@@ -1254,6 +1349,10 @@ footer a:hover {
     width: 100%;
     height: 100vh;
     align-items: center;
+}
+
+.default-site-footer.haven-t-form {
+    height: 60vh;
 }
 
 .footer-copyright {
@@ -1666,11 +1765,48 @@ body.touch .arrow {
         width: 80vw;
     }
     /*************************************************/
-
-
+    /**************** not-found section **************/
+    .header-container-404 {
+        height: calc(100svh - min(10.5vw, 20vh) - 180px);
+        background-position: 50% 0;
+    }
+    .not-found {
+        width: 80%;
+    }
+    .header-container-404 .text {
+        width: 70%;
+    }
+    .header-container-404 .text h1 {
+        font-size: 110px;
+        line-height: 90px
+    }
+    .header-container-404 .text h2 {
+        font-size: 7vw;
+        line-height: 5vw;
+    }
+    .header-container-404 .text p {
+        font-size: 1.7vw;
+        margin-bottom: 0;
+    }
+    .header-container-404 .text img {
+        width: 2vw;
+        height: 2vw;
+    }
+    .button-box-404 {
+        width: 90%;
+        height: 7vw;
+    }
+    .header-container-404 .text button {
+        height: 100%;
+        width: 50%;
+        font-size: 2vw;
+    }
     /***************** footer-section ****************/
     .default-site-footer {
         height: 400px;
+    }
+    .default-site-footer.haven-t-form {
+        height: 180px;
     }
     .footer-form-container {
         padding: 0;

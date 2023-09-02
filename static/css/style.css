@@ -22,8 +22,7 @@
     /*****************************/
 
     /********* defalut site fonts  *********/
-    --ff-roboto: 'Roboto';
-    --ff-open-sans: 'Open Sans', sans-serif;
+    --ff-open-sans: 'Open Sans';
     --ff-italic: 'Yellowtail';
     /***************************************/
 }
@@ -133,7 +132,6 @@ footer a:hover {
 .site-name-foot,
 .site-name {
     color: var(--clr-blue);
-    font-family: 'Roboto';
     font-size: 2vw;
     font-style: normal;
     font-weight: 700;
@@ -143,7 +141,6 @@ footer a:hover {
 
 .text-nav {
     color: var(--clr-blue);
-    font-family: 'Roboto';
     font-size: max(.6rem, 1.1vw);
     font-style: normal;
     font-weight: 700;
@@ -152,7 +149,6 @@ footer a:hover {
 
 .select-text {
     color: var(--clr-blue);
-    font-family: 'Roboto';
     font-size: .7vw;
     font-style: normal;
     font-weight: 700;
@@ -175,7 +171,6 @@ footer a:hover {
     border-radius: 5000px;
     padding-left: 1vw;
     color: var(--clr-blue);
-    font-family: 'Roboto';
     font-size: max(.6rem, 1.1vw);
 }
 
@@ -228,7 +223,6 @@ footer a:hover {
 
 .cart-count-text {
     color: var(--clr-blue);
-    font-family: 'Roboto';
     font-size: min(1.9vh, 1vw);
     font-style: normal;
     font-weight: 400;
@@ -1207,6 +1201,22 @@ footer a:hover {
 
 /**************************************************************************************************/
 
+/*********************************** blog page styless part ******************************************/
+.header-body-blog {
+    width: 100%;
+    height: 23vw;
+    background-image: url('../img/blog/header-bg-img.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-blog-h1 {
+    color: var(--clr-blue);
+    font-size: 4vw;
+}
 
 /*********************************** footer styless part ******************************************/
 /******************* footer hover section ************************/

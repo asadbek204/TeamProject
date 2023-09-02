@@ -7,7 +7,7 @@ let isMobile = {
 	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
 };
 
-let body = document.getElementById('organick');
+let body = document.getElementById('body');
 
 if(isMobile.any()){
 	body.classList.add('touch');

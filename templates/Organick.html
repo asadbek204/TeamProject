@@ -14,7 +14,7 @@
     <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
     <title>Document</title>
 </head>
-<body id="organick">
+<body id="body">
     <header class="default-site-header">
         <!-- navigation bar -->
         <div class="header-nav-container">
@@ -32,11 +32,10 @@
                         <div class="select-box">
                             <a href="#" class="text-nav menu__link">Pages<span class="menu__arrow"></span></a>
                             <div class="sub-menu__list">
-                                <a href="" class="select-box-menu-list-item">Organick</a>
                                 <a href="" class="select-box-menu-list-item">Service</a>
                                 <a href="" class="select-box-menu-list-item">Portfolio</a>
                                 <a href="" class="select-box-menu-list-item">Team</a>
-                                <a href="" class="select-box-menu-list-item">Blog</a>
+                                <a href="{{ url_for('blog') }}" class="select-box-menu-list-item">Blog</a>
                                 <a href="" class="select-box-menu-list-item">Contact</a>
                             </div>
                         </div>
@@ -64,11 +63,10 @@
                 <div class="select-box"  id="pages-selector">
                     <a href="#" class="text-nav menu__link">Pages<span class="menu__arrow arrow"  id="arrow"></span></a>
                     <div class="sub-menu__list"  id="sub-menu-list">
-                        <a href="" class="select-box-menu-list-item-mobile">Organick</a>
                         <a href="" class="select-box-menu-list-item-mobile">Service</a>
                         <a href="" class="select-box-menu-list-item-mobile">Portfolio</a>
                         <a href="" class="select-box-menu-list-item-mobile">Team</a>
-                        <a href="" class="select-box-menu-list-item-mobile">Blog</a>
+                        <a href="{{ url_for('blog')}}" class="select-box-menu-list-item-mobile">Blog</a>
                         <a href="" class="select-box-menu-list-item-mobile">Contact</a>
                     </div>
                 </div>
@@ -93,7 +91,7 @@
         </div>
     </header>
     <!---------------------- all pages without header and footer --------------------------->
-    <main>
+    <main id="organick">
 
         <!---------------------------------- page-1 -------------------------------------->
 

@@ -518,9 +518,9 @@ footer a:hover {
     position: relative;
 }
 
-.touch .menu__link {
+.touch .text-nav-box-mobile .menu__link {
     width: 32px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: end;
 }
@@ -672,6 +672,9 @@ body.touch .arrow {
         align-items: center;
         border-top: 1px solid #f7f7f7;
         border-bottom: 1px solid #f7f7f7;
+    }
+    .touch .text-nav-box-mobile .menu__link {
+        display: flex;
     }
     .text-nav-box-mobile .text-nav {
         display: inline;

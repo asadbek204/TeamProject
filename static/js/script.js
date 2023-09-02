@@ -7,18 +7,23 @@ let isMobile = {
 	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
 };
 
-let body=document.getElementById('test');
-console.log(body)
+let body = document.getElementById('test');
+
 if(isMobile.any()){
-	console.log('mobile')
 	body.classList.add('touch');
-	for (let i = 1; i <=3; i++) {
-		let for_pc = document.getElementById(`for-pc-${i}`)
-		for_pc.classList.add('display-none')
-	}
-	for (let i = 9; i <= 11; i++) {
-		el = document.getElementById(`select-item-${i}`)
-		el.classList.remove('display-none')
+	let menu = document.getElementById('sub-menu-list')
+	let pages_selector = document.getElementById('pages-selector')
+	let arrow = document.getElementById('arrow')
+	pages_selector.onclick = () => {
+		if (menu.classList.contains('open')){
+			menu.classList.remove('open')
+			arrow.classList.remove('active')
+			this.classList.remove('hovered-mobile-version')
+		}else{
+			menu.classList.add('open')
+			arrow.classList.add('active')
+			this.classList.add('hovered-mobile-version')
+		}
 	}
 }
 else{

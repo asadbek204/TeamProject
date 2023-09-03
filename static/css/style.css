@@ -1010,7 +1010,7 @@ footer a:hover {
     line-height: normal;
 }
 /********************* page-8 styless section ***********************/
-#organick .page-8 {
+.page-8 {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -1018,7 +1018,7 @@ footer a:hover {
     align-items: center;
 }
 
-#organick .page-8-body {
+.page-8-body {
     width: 73%;
     height: 60vh;
     display: flex;
@@ -1027,8 +1027,8 @@ footer a:hover {
     row-gap: 4vh;
 }
 
-#organick .page-8-content-box,
-#organick .page-8-container {
+.page-8-content-box,
+.page-8-container {
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -1041,13 +1041,13 @@ footer a:hover {
     column-gap: .5vw;
 }
 
-#organick .page-8-text-box {
+.page-8-text-box {
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
 }
 
-#organick .page-8-date-box {
+.page-8-date-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1058,8 +1058,8 @@ footer a:hover {
     border-radius: 50%;
 }
 
-#organick .page-8-box-1,
-#organick .page-8-box-2 {
+.page-8-box-1,
+.page-8-box-2 {
     display: flex;
     justify-content: start;
     align-items: start;
@@ -1072,14 +1072,15 @@ footer a:hover {
     background-size: cover;
     background-position: center;
 }
-#organick .page-8-box-1 {
+
+.page-8-box-1 {
     background-image: url('../img/main/page-8-background-1.svg');
 }
-#organick .page-8-box-2 {
+.page-8-box-2 {
     background-image: url('../img/main/page-8-background-2.svg');
 }
 
-#organick .page-8-absolute-content {
+.page-8-absolute-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1088,18 +1089,18 @@ footer a:hover {
     position: absolute;
     background-color: white;
     bottom: -6vh;
-    border-radius: 32px;
+    border-radius: 3vw;
     box-shadow: 0 1px 30px #b1b0b092;
-    width: calc(100% - 3.4vw);
+    width: calc(100% - 3vw);
     height: 62%;
-    padding: 46px 57px 60px 57px;
+    padding: 3vw;
     border-radius: 31px 34px 30px 30px;
     box-shadow: 0px 20px 35px 0px rgba(167, 167, 167, 0.25);
 }
 
 /* fonts */
 
-#organick .page-8-italic-green {
+.page-8-italic-green {
     color: var(--clr-green);
     font-family: var(--ff-italic);
     font-size: 36px;
@@ -1108,36 +1109,36 @@ footer a:hover {
     line-height: normal;
 }
 
-#organick .page-8-content-h1 {
+.page-8-content-h1 {
     color: var(--clr-blue);
     font-family: var(--ff-roboto);
-    font-size: 50px;
+    font-size: 5vw;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
     width: 702px;
 }
 
-#organick .page-8-date-span-1 {
+.page-8-date-span-1 {
     color: var(--clr-blue);
     text-align: center;
     font-family: var(--ff-roboto);
-    font-size: 25px;
+    font-size: 1.4vw;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
 }
 
-#organick .page-8-date-span-2 {
+.page-8-date-span-2 {
     color: var(--clr-blue);
     font-family: var(--ff-roboto);
-    font-size: 20px;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
 }
 
-#organick .page-8-more-new-button {
+.page-8-more-new-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1155,7 +1156,7 @@ footer a:hover {
     background: #FFF;
 }
 
-#organick .page-8-button {
+.page-8-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1166,38 +1167,43 @@ footer a:hover {
     border-radius: 16px;
     color: var(--clr-blue);
     font-family: var(--ff-roboto);
-    font-size: 20px;
+    font-size: 1.1vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-#organick .page-8-user-name {
+.page-8-user-name {
     color: var(--clr-blue);
     font-family: var(--ff-roboto);
-    font-size: 18px;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-#organick .page-8-h1 {
+.page-8-user-icon {
+    width: 1vw;
+    height: 1vw;
+}
+
+.page-8-h1 {
     color: var(--clr-blue);
     font-family: var(--ff-roboto);
-    font-size: 25px;
+    font-size: 1.4vw;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
 }
 
-#organick .page-8-p {
+.page-8-p {
     color: var(--clr-black);
     font-family: var(--ff-open-sans);
-    font-size: 18px;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 400;
     line-height: 165.4%; /* 29.772px */
-}
+}       
 
 /**************************************************************************************************/
 
@@ -1218,6 +1224,64 @@ footer a:hover {
     font-size: 4vw;
 }
 
+.page-blog-container {
+    width: 73%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog .page-8-button {
+    background-color: transparent;
+    justify-content: start;
+}
+
+#blog .page-8-body {
+    width: 100%;
+}
+
+.page-blog-box-3,
+.page-blog-box-4,
+.page-blog-box-5,
+.page-blog-box-6 {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 48.5%;
+    height: 50vh;
+    border-radius: 1.5vw;
+    padding: 4vh 1.5vw;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-blog-box-3 {
+    background-image: url('../img/blog/cart-img-2-1.svg');
+}
+
+.page-blog-box-4 {
+    background-image: url('../img/blog/cart-img-2-2.svg');
+}
+
+.page-blog-box-5 {
+    background-image: url('../img/blog/cart-img-3-1.svg');
+}
+
+.page-blog-box-6 {
+    background-image: url('../img/blog/cart-img-3-2.svg');
+}
 
 /*********************************** 404 not found styless part **************************************/
 .header-container-404 {
@@ -1765,6 +1829,72 @@ body.touch .arrow {
         width: 80vw;
     }
     /*************************************************/
+    /**************** page-blog section **************/ 
+    #blog {
+        height: 270vh;
+    }
+    .page-8-body {
+        width: 100%;
+        height: 90vh;
+    }
+    .page-8-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10vh;
+    }
+    .page-blog-container {
+        width: 80%;
+    }
+    .page-8-box-1,
+    .page-8-box-2,
+    .page-blog-box-3,
+    .page-blog-box-4,
+    .page-blog-box-5,
+    .page-blog-box-6 {
+        width: 100%;
+        height: 35vh;
+        border-radius: 2.5vh;
+        padding: 20px 15px;
+    }
+    .page-8-date-box {
+        width: 50px;
+        height: 50px;
+    }
+    .page-8-date-span-1 {
+        font-size: 16px;
+    }
+    .page-8-date-span-2 {
+        font-size: 14px;
+    }
+    .page-8-absolute-content {
+        border-radius: 20px;
+        width: calc(100% - 30px);
+        padding: 20px;
+    }
+    .page-8-user-name {
+        font-size: 10px;
+    }
+    .page-8-h1 {
+        font-size: 15px;
+    }
+    .page-8-p {
+        font-size: 10px;
+    }
+    .page-8-inner-box {
+        column-gap: 5px;
+    }
+    .page-8-user-icon {
+        width: 10px;
+        height: 10px;
+    }
+    .page-8-button {
+        font-size: 12px;
+    }
+    .page-blog-aerrow {
+        width: 8px;
+        height: 8px;
+    }
     /**************** not-found section **************/
     .header-container-404 {
         height: calc(100svh - min(10.5vw, 20vh) - 180px);

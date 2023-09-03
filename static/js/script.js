@@ -18,11 +18,11 @@ if(isMobile.any()){
 		if (menu.classList.contains('open')){
 			menu.classList.remove('open')
 			arrow.classList.remove('active')
-			this.classList.remove('hovered-mobile-version')
+			pages_selector.classList.remove('hovered-mobile-version')
 		}else{
 			menu.classList.add('open')
 			arrow.classList.add('active')
-			this.classList.add('hovered-mobile-version')
+			pages_selector.classList.add('hovered-mobile-version')
 		}
 	}
 }

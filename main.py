@@ -37,7 +37,7 @@ def contact():
 
 @app.route('/home')
 def home():
-    return '<h1>home page</h1>'
+    return main()
 
 @app.route('/about')
 def about():
@@ -54,6 +54,18 @@ def projects():
 @app.route('/news')
 def news():
     return '<h1>news page</h1>'
+
+@app.route('/password')
+def password():
+    return render_template('password.html', title='Password Protected', pages=pages)
+
+@app.route('/licenses')
+def licenses():
+    return render_template('licenses.html', title='Licenses', pages=pages)
+
+@app.route('/change_log')
+def change_log():
+    return render_template('change_log.html', title='Change Log', pages=pages)
 
 @app.route('/not_found')
 def not_found():

@@ -118,10 +118,6 @@ footer a:hover {
     gap: 2vw;
 }
 
-.select-box {
-    gap: .4vw;
-}
-
 .default-site-nav {
     justify-content: space-between;
     width: 100%;
@@ -250,19 +246,21 @@ footer a:hover {
 /************************ container styless ***********************/
 
 .header-body {
-    height: calc(100vh - min(10.5vw, 20vh));
+    height: calc(100svh - min(10.5vw, 20vh));
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #E3F1E9;
+    background-color: #f1eff0;
     background-image: url('../img/main/header-bg-img.png');
-
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header-container {
     width: 73%;
+    height: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -271,7 +269,7 @@ footer a:hover {
 .header-content-span {
     color: #68A47F;
     font-family: var(--ff-italic);
-    font-size: 36px;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -279,8 +277,7 @@ footer a:hover {
 
 .header-content-h1 {
     color: var(--clr-blue);
-    font-family: var(--ff-roboto);
-    font-size: 70px;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -292,17 +289,15 @@ footer a:hover {
     justify-content: center;
     gap: .7vw;
     margin-top: 1.5vh;
-    width: 220px;
-    height: 79px;
+    width: 12vw;
+    height: 4vw;
     border-radius: 16px;
     background: var(--clr-yellow);
     color: var(--clr-blue);
-    font-family: var(--ff-roboto);
-    font-size: 20px;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
 }
 
 /**************************************************************************************************/
@@ -1282,7 +1277,165 @@ footer a:hover {
 .page-blog-box-6 {
     background-image: url('../img/blog/cart-img-3-2.svg');
 }
+/*************************** password page styless part ***************************************************/
+.content-pasword {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.pasword-content {
+    width: 856px;
+    height: 351px;
+    border-radius: 30px;
+    padding: 35px 31px;
+    gap: 10px;
+    color: #FFF;
+    box-shadow: 0px 39px 37px 0px #C3C3C340;
+    display: flex;
+}
+
+.pasword-content  .text1 > h3 {
+    color: var(--clr-blue);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    font-family: var(--ff-roboto);
+    /* margin-top: 24px; */
+    margin-left: 32px;
+}
+
+.pasword-content .text1 > .form {
+    width: 569px;
+    height: 80px;
+    border-radius: 16px;
+    border: 1px solid #7EB693;
+    margin-top: 26px;
+    margin-left: 32px;
+}
+
+.pasword-content  .text1 .form > input {
+    font-size: 16px;
+    margin: 10px;
+    outline: none;
+}
+
+.pasword-content  .text1 > button {
+    width: 210px;
+    height: 80px;
+    padding: 28px, 45px, 29px, 45px;
+    gap: 10px;
+    border-radius: 16px;
+    background-color: var(--clr-blue);
+    color: #FFF;
+    font-family: var(--ff-roboto);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px; 
+    margin-top: 26px;
+    margin-left: 32px;
+    cursor: pointer;
+}
+
+.pasword-content .text1  button > img {
+    margin-left: 10px;
+}
+/*********************************** license styless part *********************************/
+.all-licence {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1255px;
+    height: 841px;
+}
+
+
+.all-licence .all-h1 > h1{
+    font-size: 40px;
+    font-family: var(--ff-roboto);
+    font-weight: 800;
+    line-height: 46px;
+    color: var(--clr-blue);
+    margin-bottom: 150px;
+}
+
+.all-licence .all-p > p  {
+    font-size: 18px;
+    font-family: var(--ff-open-sans);
+    font-weight: 400;
+    line-height: 29px;
+    color: var(--clr-black);
+    margin-left: 129px;
+}
+
+.victor {
+    font-family: var(--ff-open-sans);
+    font-weight: 700;
+    color: var(--clr-green);
+}
+
+.font-color {
+    font-weight: 700;
+    color: var(--clr-blue);
+    font-family: var(--ff-open-sans);
+}
+
+.licence {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-blue);
+    margin-left: 129px;
+    margin-top: 45px;
+    margin-bottom: 11px;
+}
+/*********************************** change log styless part **************************************/
+.change-log {
+    display: flex;
+    width: 705px;
+    height: 216px;
+    border-radius: 30px;
+    padding: 26px 41px;
+    gap: 10px;
+    color: #FFF;
+    box-shadow: 0px 39px 37px 0px #C3C3C340;
+}
+
+.change-log .txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-log .txt > h1 {
+    font-family: var(--ff-roboto);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 46px;
+    color: var(--clr-blue);
+}
+
+.change-log .txt > p {
+    font-family: var(--ff-open-sans);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--clr-black);
+}
+
+.image-change {
+    background-image: url('../img/change-log.svg');
+    width: 100%;
+    height: 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /*********************************** 404 not found styless part **************************************/
 .header-container-404 {
     width: 100%;
@@ -1614,14 +1767,8 @@ footer a:hover {
 }
 
 .select-box {
+    gap: .4vw;
     position: relative;
-}
-
-.touch .text-nav-box-mobile .menu__link {
-    width: 32px;
-    display: none;
-    justify-content: space-between;
-    align-items: end;
 }
 
 .menu__list {
@@ -1676,9 +1823,24 @@ footer a:hover {
     text-align: center;
 }
 
+.text-nav-box-mobile {
+    height: 3vw;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
+}
+
 .arrow {
-    right: 0;
-    bottom: 5px;
+    width: 1vw;
+    height: 1vw;
+    inset: 0;
+    margin: auto;
+    margin-right: 0;
+    margin-top: 10px;
 	display: none;
     position: absolute;
 	border-top: 2px solid #000;
@@ -1690,24 +1852,12 @@ footer a:hover {
 	transform: rotate(-180deg);
 }
 
-.sub-menu__arrow.arrow {
-	right: 10px;
-	border-left: 10px solid #000;
-	border-right: none;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-}
-
 body.mouse .menu__list>.select-box:hover .sub-menu__list {
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-}
-
-body.mouse .sub-menu__list>.select-box:hover .sub-sub-menu__list {
-	display: block;
 }
 
 .sub-menu__list.open{
@@ -1719,17 +1869,21 @@ body.touch .arrow {
 }
 
 .select-box-menu-list-item-mobile {
-    width: 40px;
-    margin-top: 10px;
+    height: 5vw;
+    width: 14vw;
+    margin-top: 5px;
     color: var(--clr-blue);
-    font-family: var(--ff-roboto);
-    font-size: 10px;
+    font-size: 3vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    border-radius: 5000px;
-    background-color: var(--clr-black);
+    border-radius: 10px;
+    background-color: var(--clr-white-gray);
+    box-shadow: -1px 1px 2px var(--clr-blue);
     transition: 300ms ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /******************************************************************************************************************************************/
@@ -1741,10 +1895,11 @@ body.touch .arrow {
     /***************** header-section ****************/
     .touch .text-nav-box-mobile .menu__link {
         display: flex;
+        width: 13vw;   
     }
     .header-nav-container {
         width: 100%;
-        height: 100px;
+        height: 130px;
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -1763,10 +1918,10 @@ body.touch .arrow {
         display: none;
     }
     .text-nav {
-        width: 20px;
+        font-size: 4vw;
     }
-    .text-nav-box-mobile {
-        height: 30px;
+    .touch .text-nav-box-mobile {
+        height: 10vw;
         width: 100%;
         padding: 0 20px;
         display: flex;
@@ -1775,8 +1930,8 @@ body.touch .arrow {
         border-top: 1px solid #f7f7f7;
         border-bottom: 1px solid #f7f7f7;
     }
-    .text-nav-box-mobile .text-nav {
-        display: inline;
+    .touch .text-nav-box-mobile .text-nav {
+        display: block;
     }
     .default-site-nav {
         height: 90px;
@@ -1811,16 +1966,9 @@ body.touch .arrow {
         font-size: 8px;
     }
     .sub-menu__list {
-        top: 0px;
-        left: -5px;
+        top: 0;
+        left: 0;
         text-align: center;
-    }
-    .sub-menu__list a {
-        font-size: 10px;
-        background-color: var(--clr-black);
-    }
-    .text-nav-box-mobile .menu__link {
-        width: 32px;
     }
     .header-body {
         height: calc(100dvh - 100px);
@@ -1829,6 +1977,45 @@ body.touch .arrow {
         width: 80vw;
     }
     /*************************************************/
+    /**************** page-organick section **************/ 
+    /*************** header-section *************/
+    .header-body {
+        background-size: 150vw;
+        background-position: top right;
+    }
+    .header-container {
+        width: 80%;
+        align-items: end;
+    }
+    .header-content {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .header-content-span {
+        font-size: 3vh;
+    }
+    .header-content-h1 {
+        font-size: 5vh;
+    }
+    .header-content-button {
+        width: 17vh;
+        height: 6vh;
+        font-size: 2vh;
+        border-radius: 10px;
+    }
+    .header-container .page-blog-aerrow {
+        width: 1.3vh;
+        height: 1.3vh;
+    }
+    /*************** page-1-section *************/
+    #organick .page-1 {
+        flex-direction: column;
+    }
+
     /**************** page-blog section **************/ 
     #blog {
         height: 270vh;

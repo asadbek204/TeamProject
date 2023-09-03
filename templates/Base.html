@@ -27,8 +27,8 @@
                         <h1 class="site-name">Organick</h1>
                     </a>
                     <div class="text-nav-box menu__list">
-                        <a href="" class="text-nav">Home</a>
-                        <a href="" class="text-nav">About</a>
+                        <a href="{{ url_for('home') }}" class="text-nav">Home</a>
+                        <a href="{{ url_for('about') }}" class="text-nav">About</a>
                         <!-- select box -->
                         <div class="select-box">
                             <a href="#" class="text-nav menu__link">Pages<span class="menu__arrow"></span></a>
@@ -38,9 +38,9 @@
                                 {% endfor -%}
                             </div>
                         </div>
-                        <a href="" class="text-nav">Shop</a>
-                        <a href="" class="text-nav">Projects</a>
-                        <a href="" class="text-nav">News</a>
+                        <a href="{{ url_for('shop') }}" class="text-nav">Shop</a>
+                        <a href="{{ url_for('projects') }}" class="text-nav">Projects</a>
+                        <a href="{{ url_for('news') }}" class="text-nav">News</a>
                     </div>
                 </div>
                 <div class="nav-box-2">
@@ -141,11 +141,11 @@
                 <div class="footer-content-box text-align-start">
                     <h1 class="footer-h1">Utility Pages</h1>
                     <div class="footer-text-box-2">
-                        <a href="" class="footer-p">Style Guide</a>
+                        <!-- <a href="" class="footer-p">Style Guide</a> -->
                         <a href="{{ url_for('not_found') }}" class="footer-p">404 Not Found</a>
-                        <a href="" class="footer-p">Password Protected</a>
-                        <a href="" class="footer-p">Licences</a>
-                        <a href="" class="footer-p">Changelog</a>
+                        <a href="{{ url_for('password') }}" class="footer-p">Password Protected</a>
+                        <a href="{{ url_for('licenses') }}" class="footer-p">Licenses</a>
+                        <a href="{{ url_for('change_log') }}" class="footer-p">Changelog</a>
                     </div>
                 </div>
             </div>

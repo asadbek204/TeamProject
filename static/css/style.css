@@ -1823,17 +1823,6 @@ footer a:hover {
     text-align: center;
 }
 
-.text-nav-box-mobile {
-    height: 3vw;
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #f7f7f7;
-    border-bottom: 1px solid #f7f7f7;
-}
-
 .arrow {
     width: 1vw;
     height: 1vw;

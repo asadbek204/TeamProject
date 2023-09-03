@@ -240,7 +240,7 @@ footer a:hover {
 
 /************************ container styless ***********************/
 
-.header-container {
+.hamid1-header-container {
     width: 100%;
     background-color: var(--clr-white-green);
     height: auto;
@@ -251,7 +251,7 @@ footer a:hover {
 
 /* baner style start */
 
-.head-baner {
+.hamid1-head-baner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,18 +259,18 @@ footer a:hover {
     width: 100%;
     position: relative;
 }
-.head-img {
+.hamid1-head-img {
     height: auto;
     width: 100%;
 }
 
-.head-img2 {
+.hamid1-head-img2 {
     position: absolute;
     width: 100%;
     height: auto;
     z-index: 1;
 }
-.head-text {
+.hamid1-head-text {
     position: absolute;
     z-index: 2;
     color: #274C5B;
@@ -286,7 +286,7 @@ footer a:hover {
 
 
 /* main start */
-h5 {
+.hamid1-experts h5 {
     color: #274C5B;
     font-family: Roboto;
     font-size: 25px;
@@ -294,7 +294,7 @@ h5 {
     font-weight: 800;
     line-height: normal;
 }
-.big-p {
+.hamid1-big-p {
     color: var(--clr-blue);
     font-family: Roboto;
     font-size: min(50px, 12vw);
@@ -303,7 +303,7 @@ h5 {
     line-height: normal;
 }
 
-.small-p {
+.hamid1-small-p {
     margin-top: 2%;
     color: #525C60;
     font-family: Open Sans;
@@ -312,7 +312,7 @@ h5 {
     font-weight: 400;
     line-height: 165.4%; /* 29.772px */
 }
-main h3 {
+.hamid1-experts h3 {
     color: var(--clr-green);
     font-family: Yellowtail;
     font-size: min(9vw, 36px);
@@ -321,41 +321,41 @@ main h3 {
     line-height: normal;
 }
 
-.my-container {
+.hamid1-my-container {
     width: 70%;
     margin: 0 auto;
 }
-.experts>.my-container{
+.hamid1-experts>.hamid1-my-container{
     background-color: #fff;
     text-align: center;
 }
 
-.experts {
+.hamid1-experts {
     margin-top: 7vw;
     min-height: 120vh;
     background-color: #fff;
     display: flex;
     align-items: center;
 }
-.experts>.my-container{
+.hamid1-experts>.hamid1-my-container{
     background-color: #fff;
     text-align: center;
 }
 
-.experts-text {
+.hamid1-experts-text {
     background-color: #fff;
     width: 60%;
     margin: 0 auto;
 }
 
-.experts-grid {
+.hamid1-experts-grid {
     margin: 3% 0;
     display: grid;
     grid-template-columns: 32% 32% 32%;
     gap: 2%;
 }
 
-.expert-box {
+.hamid1-expert-box {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -366,22 +366,22 @@ main h3 {
     transition: 250ms ease all;
 }
 
-.expert-box>img {
+.hamid1-expert-box>img {
     object-fit: contain;
     border-radius: 5% 5% 0 0;
     width: 100%;
 
 }
 
-.expert-box h3 {
+.hamid1-expert-box h3 {
     text-align: left;
     font-size: 22px;
 }
 
-.experts-desc {
+.hamid1-experts-desc {
     padding: 5% 0 5% 7%;
 }
-.expert-socials{
+.hamid1-expert-socials{
     position: absolute;
     bottom: 4%;
     right: 9%;
@@ -389,16 +389,16 @@ main h3 {
     white-space: nowrap;
 }
 
-.expert-socials a {
+.hamid1-expert-socials a {
     margin-right: 10%;
 }
 
 
-.expert-socials a img {
+.hamid1-expert-socials a img {
     scale: 0.85;
 }
 
-.expert-box:hover{
+.hamid1-expert-box:hover{
     background-color: #fff;
     box-shadow: 0px 10px 100px 2px rgba(0, 0, 0, 0.25);
 }

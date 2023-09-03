@@ -240,7 +240,7 @@ footer a:hover {
 
 /************************ container styless ***********************/
 
-.header-container {
+.hamid4-header-container {
     width: 100%;
     background-color: var(--clr-white-green);
     height: auto;
@@ -251,7 +251,7 @@ footer a:hover {
 
 /* baner style start */
 
-.head-baner {
+.hamid4-head-baner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,18 +259,18 @@ footer a:hover {
     width: 100%;
     position: relative;
 }
-.head-img {
+.hamid4-head-img {
     height: auto;
     width: 100%;
 }
 
-.head-img2 {
+.hamid4-head-img2 {
     position: absolute;
     width: 100%;
     height: auto;
     z-index: 1;
 }
-.head-text {
+.hamid4-head-text {
     position: absolute;
     z-index: 2;
     color: #274C5B;
@@ -287,7 +287,7 @@ footer a:hover {
 
 /* main start */
 
-.products-grid {
+.hamid4-products-grid {
     padding: 5% 0;
     width: 100%;
     height: auto;
@@ -298,12 +298,12 @@ footer a:hover {
     row-gap: 2.5%;
 }
 
-.my-container {
+.hamid4-my-container {
     width: 70%;
     margin: 0 auto;
 }
 
-.products-grid>div {
+.hamid4-products-grid>div {
     background: url(/img/shop/products/Photo-1.svg), lightgray 50% / cover no-repeat;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
@@ -315,40 +315,40 @@ footer a:hover {
     max-width: 340px;
 
 }
-.products-grid>div:nth-child(2){
+.hamid4-products-grid>div:nth-child(2){
     background-image: url(/img/shop/products/Photo-2.svg);
 }
-.products-grid>div:nth-child(3){
+.hamid4-products-grid>div:nth-child(3){
     background-image: url(/img/shop/products/Photo-3.svg);
 }
-.products-grid>div:nth-child(4){
+.hamid4-products-grid>div:nth-child(4){
     background-image: url(/img/shop/products/Photo-4.svg);
 }
-.products-grid>div:nth-child(5){
+.hamid4-products-grid>div:nth-child(5){
     background-image: url(/img/shop/products/Photo-5.svg);
 }
-.products-grid>div:nth-child(6){
+.hamid4-products-grid>div:nth-child(6){
     background-image: url(/img/shop/products/Photo-6.svg);
 }
-.products-grid>div:nth-child(7){
+.hamid4-products-grid>div:nth-child(7){
     background-image: url(/img/shop/products/Photo-7.svg);
 }
-.products-grid>div:nth-child(8){
+.hamid4-products-grid>div:nth-child(8){
     background-image: url(/img/shop/products/Photo-8.svg);
 }
-.products-grid>div:nth-child(9){
+.hamid4-products-grid>div:nth-child(9){
     background-image: url(/img/shop/products/Photo-9.svg);
 }
-.products-grid>div:nth-child(10){
+.hamid4-products-grid>div:nth-child(10){
     background-image: url(/img/shop/products/Photo-10.svg);
 }
-.products-grid>div:nth-child(11){
+.hamid4-products-grid>div:nth-child(11){
     background-image: url(/img/shop/products/Photo-11.svg);
 
-}.products-grid>div:nth-child(12){
+}.hamid4-products-grid>div:nth-child(12){
     background-image: url(/img/shop/products/Photo-12.svg);
 }
-.name{
+.hamid4-name{
     display: flex;
     padding: 2% 4%;
     justify-content: center;
@@ -367,11 +367,11 @@ footer a:hover {
     background-color:#274C5B;
 }
 
-.products-grid>div>img {
+.hamid4-products-grid>div>img {
     position: relative;
     top: 15%;
 }
-.products-grid>div>span {
+.hamid4-products-grid>div>span {
     color: #274C5B;
     text-align: center;
     font-family: Roboto;
@@ -384,7 +384,7 @@ footer a:hover {
     bottom: 14%;
 }
 
-.products-grid>div>hr {
+.hamid4-products-grid>div>hr {
     border: 1px solid #DEDDDD;
     position: absolute;
     width: 84%;
@@ -392,7 +392,7 @@ footer a:hover {
     bottom: 10%;
 
 }
-.prices {
+.hamid4-prices {
     bottom: 4%;
     display: flex;
     align-items: center;
@@ -400,7 +400,7 @@ footer a:hover {
     position: absolute;
     width: 84%;
 }
-.ex-price {
+.hamid4-ex-price {
     text-decoration: line-through;
     color: #B8B8B8;
     text-align: center;
@@ -411,7 +411,7 @@ footer a:hover {
     line-height: normal;
 }
 
-.current-price {
+.hamid4-current-price {
     margin-left: 2%;
     color: #274C5B;
     text-align: center;
@@ -422,7 +422,7 @@ footer a:hover {
     line-height: normal;
 }
 
-.prices>img {
+.hamid4-prices>img {
     margin-left: auto;
 }
 /*********************************** footer styless part ******************************************/
@@ -650,19 +650,19 @@ footer a:hover {
 
 
 @media (max-width:1241px) {
-    .my-container {
+    .hamid4-my-container {
         width: 80%;
     }
-    .products-grid{
+    .hamid4-products-grid{
         grid-template-columns: auto auto auto;
         margin-bottom: 12vh;
     }
 }
 @media (max-width: 820px) {
-    .my-container {
+    .hamid4-my-container {
         width: 80%;
     }
-    .products-grid{
+    .hamid4-products-grid{
         grid-template-columns: auto auto;
         /* margin-bottom: 25vh; */
         row-gap: 1.2%;
@@ -670,12 +670,12 @@ footer a:hover {
 }
 
 @media (max-width:540px) {
-    .products-grid{
+    .hamid4-products-grid{
         width: 80%;
         grid-template-columns: auto;
         margin-bottom: 100vh;
     }
-    .products-grid>div {
+    .hamid4-products-grid>div {
         max-width: 600px;
         height: 400px;
     }
@@ -683,14 +683,14 @@ footer a:hover {
 }   
 
 @media (max-width: 480px) {
-    .products-grid{
+    .hamid4-products-grid{
         width: 90%;
     }
-    .head-baner img{
+    .hamid4-head-baner img{
         display: none;
     }
 
-    .head-baner {
+    .hamid4-head-baner {
         padding: 60px 0;
     }
     

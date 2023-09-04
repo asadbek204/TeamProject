@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 from dataclasses import dataclass, asdict
 app = Flask(__name__)
 
@@ -109,10 +109,23 @@ def licenses():
 def change_log():
     return render_template('change_log.html', title='Changelog', pages=pages)
 
-
-@app.route('/blog/single')
-def blog_single():
-    return 'blog single'
+@app.route('/service/<string:name>')
+def service_single(name):
+    match name:
+        case 'store':
+            return render_template('quility.html', title='Organic Store', pages=pages)
+        case 'dairy':
+            return 'dairy service'
+        case 'delivery':
+            return 'delivery'
+        case 'agricultural':
+            return 'agricultural sevice'
+        case 'products':
+            return 'Organic products'
+        case 'fresh_vegetables':
+            return 'fresh vegetables'
+        case _:
+            return not_found()
 
 @app.route('/not_found')
 @app.errorhandler(404)

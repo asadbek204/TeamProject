@@ -1273,7 +1273,7 @@ footer a:hover {
     line-height: normal;
 }
 
-.images {
+.service-images {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1294,7 +1294,7 @@ footer a:hover {
     text-align: end;
 }
 
-.right-1 {
+.right {
     text-align: start;
 }
 
@@ -1308,11 +1308,12 @@ footer a:hover {
     height: 21vh;
 }
 
-.left h2,
-.right h2 {
+.left a,
+.right a {
     color: var(--clr-blue);
     font-size: 1.3vw;
     font-weight: 500;
+    line-height: 3vw;
 }
 
 .prod {
@@ -1379,6 +1380,16 @@ footer a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.service-name-box {
+    width: 100%;
+    justify-content: end;
+    display: flex;
+}
+
+.right .service-name-box {
+    justify-content: start;
 }
 
 .services-italic-green {
@@ -1490,6 +1501,231 @@ footer a:hover {
 
 .page-blog-box-6 {
     background-image: url('../img/blog/cart-img-3-2.svg');
+}
+/*************************** quality page styless part  ***************************************************/
+.header-container-quility {
+    width: 100%;
+    height: 24vw;
+    background-image: url('../img/quality/quility-img.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-service-content-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1vw;
+}
+
+.quility-img-text {
+    font-family: var(--ff-roboto);
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 82px;
+    color: var(--clr-blue);
+}
+
+.img-section-2,
+.img-section-2 img{
+    /* width: 20vw; */
+    height: 13vw;
+    border-radius: 1vw;
+}
+
+.section-2-h {
+    /* width: 32vw; */
+    height: 13vw;
+    background-color: #F9F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 2.5vw;
+    border-radius: 1vw;
+}
+
+#quality {
+    width: 100%;
+    height: 120vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-service-container,
+.main-container-quility {
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quality-service-container {
+    width: 67%;
+    row-gap: 3vw;
+}
+
+.quality-content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5vw;
+}
+
+.quality-h4 {
+    color: var(--clr-blue);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.quality-h5 {
+    color: var(--clr-blue);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.quality-p {
+    color: var(--clr-blue);
+    font-family: var(--ff-open-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165.4%;
+}
+
+.main-img {
+    width: 100%;
+    height: 934px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-main-quility {
+    width: 100%;
+    height: 267px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quility-h4 {
+    font-family: var(--ff-roboto);
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 58px;
+    color: var(--clr-blue);
+}
+
+.quility-p {
+    width: 936px;
+    height: 180px;
+    font-family: var(--ff-open-sans);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--clr-black);
+}
+
+.text-section-2-quility {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section-2-quility .section-2-h > p {
+    width: 447px;
+    height: 90px;
+    font-family: var(--ff-open-sans);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--clr-black);
+}
+
+.section-6-quility {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section-6-quility > h3 {
+    font-family: var(--ff-roboto);
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 41px;
+    color: var(--clr-blue);
+}
+
+.section-6-p-quility {
+    color: var(--clr-blue);
+    font-family: var(--ff-open-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165.4%;
+}
+
+.section-7-quility {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1.5vw;
+}
+
+.round {
+    width: 3.7vw;
+    height: 3.7vw;
+    border-radius: 50%;
+    background-color: var(--clr-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--ff-roboto);
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 29px;
+    color: #fff;
+}
+
+.round-p {
+    color: #274C5B;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.quality-round-box-2,
+.quality-round-box-1 {
+    width: 43%;
+    height: 5vw;
+    background-color: #F9F8F8;
+    border-radius: 5000px;
+    display: flex;
+    padding-left: .9vw;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1.1vw;
+}
+
+.quality-round-box-2 {
+    width: 45%;
 }
 /*************************** password page styless part ***************************************************/
 .header-container-password {
@@ -2391,7 +2627,7 @@ body.touch .arrow {
     #service .better {
         font-size: 30px;
     }
-    #service .images {
+    #service .service-images {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2436,14 +2672,16 @@ body.touch .arrow {
         width: 10px;
         height: 10px;
     }
-    #service .left h2,
-    #service .right h2 {
+    #service .left a,
+    #service .right a {
         font-size: 15px;
     }
     #service .prod {
         font-size: 9px;
     }
+    #service .service-name-box {
 
+    }
     #service .services-section-2 {
         background-size: 100vw;
         height: 200px;

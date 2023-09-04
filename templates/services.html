@@ -11,75 +11,66 @@
                 <p class="grow">What we Grow</p>
                 <p class="better">Better Agriculture for <br> Better Future</p>
             </div>
-            <div class="images">
+            <div class="service-images">
                 {% macro left_part(class_name) -%}
                 <div class="{{ class_name }}">
                     <div class="left1">
-                        <img src="{{ url_for('static', filename='img/services/icon.png') }}" alt="">
-                        <h2>Dairy Products</h2>
+                        <div class="service-name-box">
+                            <img src="{{ url_for('static', filename='img/services/icon.png') }}" alt="">
+                            <a href="/service/dairy">Dairy Products</a>
+                        </div>
                         <p class="prod">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis
                         </p>
                     </div>
                     <div class="left1">
-                        <img src="{{ url_for('static', filename='img/services/icon-2.png')}}" alt="">
-                        <h2>Store Services</h2>
+                        <div class="service-name-box">
+                            <img src="{{ url_for('static', filename='img/services/icon-2.png')}}" alt="">
+                            <a href="/service/store">Store Services</a>
+                        </div>
                         <p class="prod">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis
                         </p>
                     </div>
                     <div class="left1">
-                        <img src="{{ url_for('static', filename='img/services/icon-3.png') }}" alt="">
-                        <h2>Delivery Services</h2>
+                        <div class="service-name-box">
+                            <img src="{{ url_for('static', filename='img/services/icon-3.png') }}" alt="">
+                            <a href="">Delivery Services</a>
+                        </div>
                         <p class="prod">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis
                         </p>
                     </div>
                 </div>
                 {%- endmacro %}
+                {{ left_part('left') }}
                 <div class="immg"></div>
                 <div class="right-container">
-                    <div class="left display-none">
-                        <div class="left1">
-                            <img src="{{ url_for('static', filename='img/services/icon.png') }}" alt="">
-                            <h2>Dairy Products</h2>
-                            <p class="prod">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis
-                            </p>
-                        </div>
-                        <div class="left1">
-                            <img src="{{ url_for('static', filename='img/services/icon-2.png')}}" alt="">
-                            <h2>Store Services</h2>
-                            <p class="prod">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis
-                            </p>
-                        </div>
-                        <div class="left1">
-                            <img src="{{ url_for('static', filename='img/services/icon-3.png') }}" alt="">
-                            <h2>Delivery Services</h2>
-                            <p class="prod">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis
-                            </p>
-                        </div>
-                    </div>
+                    {{ left_part('left display-none') }}
                     <div class="right">
                         <div class="right1">
-                            <img src="{{ url_for('static', filename='img/services/icon-4.png') }}" alt="">
-                            <h2>Agricultural Services</h2>
+                            <div class="service-name-box">
+                                <img src="{{ url_for('static', filename='img/services/icon-4.png') }}" alt="">
+                                <a href="">Agricultural Services</a>
+                            </div>
                             <p class="prod">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. <br> Sed ut perspiciatis.
                             </p>
                         </div>
                         <div class="right1">
-                            <img src="{{ url_for('static', filename='img/services/icon-5.png') }}" alt="">
-                            <h2>Organic Products</h2>
+                            <div class="service-name-box">
+                                <img src="{{ url_for('static', filename='img/services/icon-5.png') }}" alt="">
+                                <a href="">Organic Products</a>
+                            </div>
                             <p class="prod">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. <br> Sed ut perspiciatis.
                             </p>
                         </div>
                         <div class="right1">
-                            <img src="{{ url_for('static', filename='img/services/icon-6.png')}}" alt="">
-                            <h2>Fresh Vegetables</h2>
+                            <div class="service-name-box">
+                                <img src="{{ url_for('static', filename='img/services/icon-6.png')}}" alt="">
+                                <a href="">Fresh Vegetables</a>
+                            </div>
                             <p class="prod">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. <br> Sed ut perspiciatis.
                             </p>

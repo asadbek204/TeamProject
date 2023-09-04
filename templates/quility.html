@@ -1,0 +1,81 @@
+{% extends 'Base.html' %}
+
+{% block header_container -%}
+<div class="header-container-quility">
+    <h2 class="quility-img-text">Quality Standard</h2>
+</div>
+{%- endblock %}
+{% block main_content %}
+<main id="quality">
+    <div class="main-container-quility">
+        <div class="main-img">
+            <img src="{{ url_for('static', filename='img/quality/quility-1-img.png') }}" alt="">
+        </div>
+        <div class="quality-service-container">
+            <div class="text-main-quility">
+                <div class="quility-text">
+                    <h4 class="quality-h4">Organic Store Services</h4>
+                    <p class="quality-p">
+                        t is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+                        <br>
+                        <br>
+                        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and auncover many web sites still in their infancy. Various versions have evolved over the years
+                    </p>
+                </div>
+            </div>
+            <div class="quality-content-container">
+                <div class="quality-service-content-box">
+                    <div class="img-section-2">
+                        <img src="{{ url_for('static', filename='img/quality/quility-2-img.jpg') }}" alt="">
+                    </div>
+                    <div class="section-2-h">
+                        <h5 class="quality-h5">Why Organic</h5>
+                        <p class="quality-p">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptat. page editors now use Lorem Ipsum as their default model text, and auncover.
+                        </p>
+                    </div>
+                </div>
+                <div class="quality-service-content-box">
+                    <div class="section-2-h">
+                        <h5 class="quality-h5">Speciality Produce</h5>
+                        <p class="quality-p">Sed ut perspiciatis unde omnis iste natus error sit voluptat. page editors now use Lorem Ipsum as their default model text, and auncover.</p>
+                    </div>
+                    <div class="img-section-2">
+                        <img src="{{ url_for('static', filename='img/quality/quility-3-img.jpg')}}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section-6-quility">
+                <div class="text-section-6-quility">
+                    <h3>We farm your land</h3>
+                    <div class="section-6-p-quility">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </div>
+                </div>
+            </div>
+            <div class="section-7-quility">
+                <div class="quality-round-box-1">
+                    <div class="round">
+                        <h6>01</h6>
+                    </div>
+                    <div class="round-p">
+                        <h6>
+                            Best quality support
+                        </h6>
+                    </div>
+                </div>
+                <div class="quality-round-box-2">
+                    <div class="round">
+                        <h6>02</h6>
+                    </div>
+                    <div class="round-p">
+                        <h6>
+                            Money back guarantee
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

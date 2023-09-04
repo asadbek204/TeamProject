@@ -1944,6 +1944,11 @@ footer a:hover {
         max-width: 370px
     }
 
+    .hamid4-products-grid {
+        grid-template-columns: auto auto auto;
+        padding-bottom: 20vh;
+    }
+
 }
 
 @media (max-width: 991.98px) {
@@ -2097,7 +2102,17 @@ footer a:hover {
         height: 45px;
     }
 
-    
+    .hamid4-products-grid {
+        grid-template-columns: auto auto;
+        padding-bottom: 40vh;
+    }
+    .hamid4-my-container{
+        width: 80%;
+    }
+
+    .hamid4-products-grid>div {
+        height: 420px;
+    }
 
 }  
 
@@ -2220,5 +2235,21 @@ footer a:hover {
     .hamid3-my-container h1 {
         font-size: min(50px, 9vw);
 
+    }
+
+    .hamid4-products-grid {
+        grid-template-columns: auto;
+        row-gap: 30px;
+        padding-bottom: 0vh;
+    }
+
+    .hamid4-products-grid>div {
+        min-width: 100%;
+        background-size: contain;
+        height: 380px;
+    }
+
+    .hamid4-my-container{
+        width: 65%;
     }
 }

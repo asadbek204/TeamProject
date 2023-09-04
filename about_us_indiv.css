@@ -1,0 +1,769 @@
+/* START OF ABOUT US PAGE */
+/*----------------------------------------------------------------------------- */
+/* baner style start */
+
+#hamid-casual-button{
+    display: flex;
+    width: min(14vw, 225px);
+    height: min(80px, 4vw);
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    border-radius: .9vw;
+    background: #274C5B;
+    color: #FFF;
+    font-family: var(--ff-roboto);
+    font-size: min(20px, 1.5vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#hamid-casual-button:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.25);
+}
+.hamid-header-container {
+    width: 100%;
+    background-color: #fff;
+}
+.hamid-head-baner {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-white-green);
+    width: 100%;
+    position: relative;
+}
+.hamid-head-img {
+    height: auto;
+    width: 100%;
+}
+.hamid-head-img2 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+.hamid-head-text {
+    position: absolute;
+    z-index: 2;
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: min(10vw, 70px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+/* baner style end */
+
+
+/* plate section style start */
+
+.hamid-my-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hamid-plate-box {
+    padding-top: 4%;
+    padding-bottom: 5vh;
+    display: flex;
+    width: 100%;
+
+}
+
+
+.hamid-plate-img {
+    width: 50%;
+    height: 100%;
+    /* left: -30%; */
+    position: relative;
+}
+.hamid-plate-img>img {
+    left: -50%;
+    position: relative;
+    width: 150%;
+    height: auto;
+}
+
+.hamid-plate-txt {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-height: 100%;
+    max-width: 50%;
+}
+.hamid-hamid-offers,
+.hamid-experts,
+.hamid-veg-background,
+.hamid-my-container h3{
+    color: var(--clr-green);
+    font-family: var(--ff-italic);
+    font-size: min(9vw, 36px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.hamid-big-p {
+    color: var(--clr-blue);
+    font-family: var(--ff-roboto);
+    font-size: min(50px, 12vw);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.hamid-small-p {
+    margin-top: 2%;
+    color: #525C60;
+    font-family: var(--ff-open-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165.4%; /* 29.772px */
+}
+
+.hamid-icon-section {
+    margin-top: 5%;
+    display: flex;
+}
+.hamid-tractor-part {
+    gap: 2%;
+    display: flex;
+}
+
+.hamid-tractor-part>span{
+    color: #274C5B;
+    font-family: var(--ff-roboto);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 80%;
+}
+
+.hamid-chemic-part {
+    display: flex;
+    gap: 2%;
+}
+
+.hamid-chemic-part>span {
+    margin-left: auto;
+    color: #274C5B;
+    font-family: var(--ff-roboto);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 80%;
+}
+
+.hamid-plate-txt>button{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+
+/* end of plate section */
+
+
+
+
+/* start of green vegetables */
+.hamid-veg-background{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 140vh;
+    padding-bottom: 10vh;
+    background-color: var(--clr-white-gray);
+}
+.hamid-veg-background>.my-container {
+    /* padding-top: 25vh; */
+    height: auto;
+}
+.hamid-decide {
+    padding-top: 10vh;
+    width: 100%;
+    display: flex;
+    min-height: 50vh;
+
+}
+
+.hamid-decide-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+    height: 100%;
+
+}
+.hamid-decide-img {
+    margin: auto 0;
+    width: 50%;
+
+}
+.hamid-decide-container-small {
+    max-width: 75%;
+
+}
+
+.hamid-decide-span {
+    font-size: min(20px, 1.5vw);
+    margin-top: 5%;
+    gap: 3%;
+    display: flex;
+    align-items: center;
+    padding: 5% 10% 5% 5%;
+    background-color: #ECECEC;;
+    border-radius: 50px;
+    width: 70%;
+    
+
+}
+.hamid-decide-span>span{
+    white-space: nowrap;
+    color: #274C5B;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+.hamid-p-last-child {
+    margin-left: 14%;
+}
+
+.hamid-decide-img>img {
+    object-fit: contain;
+    border-radius: 5%;
+    margin-left: 5%;
+    width: 95%;
+    height: auto;
+}
+
+.hamid-veg-grid-container {
+    margin: 10vh auto;
+    width: 80%;
+    background-color: var(--clr-white-gray);
+    height: 30vh;
+}
+.hamid-veg-grid-box {
+    justify-content: center;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 2.7%;
+}
+.hamid-veg-grid-box > div {
+    padding: 0px 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    height: 100%;
+    background-color: #fff;
+
+}
+
+.hamid-icon-vegs {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    background-color: var(--clr-white-gray);
+    border-radius: 20%;
+}
+.hamid-icon-vegs>img {
+    scale: 80%;
+
+}
+
+.hamid-hamid-offers,
+.hamid-experts,
+.hamid-veg-background,
+.hamid-my-container h5{
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/* end of green vegs section */
+
+
+/* start of experts section */
+
+.hamid-experts {
+    min-height: 120vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.hamid-experts>.my-container{
+    background-color: #fff;
+    text-align: center;
+}
+
+.hamid-experts-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.hamid-experts-grid {
+    margin: 3% 0;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+}
+
+.hamid-expert-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-height: 55vh;
+    background-color: var(--clr-white-gray);
+    border-radius: 5%;
+    transition: 250ms ease all;
+}
+
+.hamid-expert-box>img {
+    object-fit: contain;
+    border-radius: 5% 5% 0 0;
+    width: 100%;
+
+}
+
+.hamid-expert-box h3 {
+    text-align: left;
+    font-size: 22px;
+}
+
+.hamid-experts-desc {
+    padding: 5% 0 5% 7%;
+}
+.hamid-expert-socials{
+    position: absolute;
+    bottom: 4%;
+    right: 9%;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.hamid-expert-socials a {
+    margin-right: 10%;
+}
+
+
+.hamid-expert-socials a img {
+    scale: 0.85;
+}
+
+.hamid-expert-box:hover{
+    background-color: #fff;
+    box-shadow: 0px 10px 100px 2px rgba(0, 0, 0, 0.25);
+}
+/* end of experts section */
+
+
+
+.hamid-offers {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background-color: var(--clr-blue);
+}
+ .hamid-offers .hamid-big-p {
+    color: #fff;
+ }
+
+
+ .hamid-offers>.my-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30%;
+ }
+.hamid-offers-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+ .hamid-offers-grid-box {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px  ;
+    gap: 2.2%;
+    margin-top: 3%;
+    width: 100%;
+    height: 380px;
+
+ }
+
+ .hamid-offers-box {
+    min-width: 320px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+
+ }
+
+
+.hamid-offer-img {
+    border-radius: 10%;
+    background-color: white;
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+.hamid-offer-img > img{
+    border-radius: 10%;
+    margin: 0 auto;
+    /* position: absolute; */
+    height: 100%;
+    object-fit: contain;
+}
+
+.hamid-offers-box:nth-child(3)>.hamid-offer-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.hamid-offers-box:nth-child(4)>.hamid-offer-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.hamid-offers-box:nth-child(4)>.hamid-offer-img {
+    width: 100;
+    background-color: white;
+
+}
+
+.hamid-offers-box>span{
+    z-index: 1;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* ------------------------------------------------------------------------ */
+/* END OF ABOUT US PAGE */
+
+
+
+/* MEDIA QUERY */
+
+/* 1394 ham kk about us u-n */
+@media (max-width: 1394px) {
+    .hamid-offers-content{
+        padding-top: 20px;
+    }
+    .hamid-offers-grid-box {
+        grid-template-columns: 320px 320px;
+        justify-content: center;
+        min-height: 750px;
+
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .hamid-my-container {
+        width: 80%;
+    }
+
+
+    .hamid-plate-box {
+        padding-top: 0%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    
+    }
+    
+
+    .hamid-plate-img>img {
+        width: 120%;
+        height: auto;
+        left: -20%;
+    }
+    
+    .hamid-plate-txt {
+        text-align: center;
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        max-width: 100%;
+    }
+
+
+    .hamid-hamid-offers,
+    .hamid-experts,
+    .hamid-veg-background,
+    .hamid-my-container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+
+    .hamid-icon-section {
+        margin-top: 5%;
+        display: flex;
+    }
+    .hamid-tractor-part {
+        gap: 2%;
+        display: flex;
+    }
+    
+    .hamid-tractor-part>span{
+        width: 80%;
+    }
+    
+    .hamid-chemic-part {
+        display: flex;
+        gap: 2%;
+    }
+    
+    .hamid-chemic-part>span {
+        margin-left: auto;
+        width: 80%;
+    }
+    
+    .hamid-plate-txt>button{
+        position: relative;
+        top: -15px;
+        margin-left: auto;
+        margin-right: auto;
+        scale: 1.5;
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .hamid-plate-box{
+            padding-bottom: 5vh;
+    }
+
+    .hamid-experts{
+        margin: 10vh 0;
+    }
+}
+@media (max-width: 991.98px) {
+    .hamid-my-container {
+        width: 85%;
+    }
+    .hamid-veg-background{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 140vh;
+        background-color: var(--clr-white-gray);
+        padding-bottom: 50vh;
+    }
+
+    .hamid-veg-background>.hamid-my-container {
+        height: auto;
+    }
+    .hamid-decide {
+        padding-top: 7vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* min-height: 50vh; */
+    
+    }
+    
+
+    .hamid-decide-text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hamid-decide-img {
+        margin-top: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    
+    }
+    .hamid-decide-img>img {
+        margin-left: 0;
+    }
+
+    .hamid-decide-container-small {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 75%;
+    
+    }
+    .hamid-decide-span{
+        font-size: 25px;
+    }
+
+    .hamid-p-last-child {
+        margin: 3.5vw 0 0vw 0;
+        text-align: left;
+        border-left: solid 5px var(--clr-green);
+        margin-left: 0;
+        padding-left: 2vw;
+    }
+
+    .hamid-veg-grid-container {
+        margin: 10vh auto;
+        width: 80%;
+        background-color: var(--clr-white-gray);
+        min-height: 30vh;
+    }
+
+    .hamid-veg-grid-box{
+        justify-content: center;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 3%;
+        row-gap: 10%;
+    }
+
+    .hamid-veg-grid-box div {
+        padding: 5% 10%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2.5vw;
+        height: 100%;
+        background-color: #fff;
+    
+    }
+    .hamid-experts-grid {
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+}  
+
+
+@media (max-width: 767.98px) {
+    .hamid-plate-img{
+        left: -12%;
+    }
+    .hamid-plate-img>img{
+        width: 160%;
+    }
+    #hamid-casual-button {
+        width: 120px;
+        font-size: 10px;
+        height: 30px;
+    }
+
+    .hamid-veg-background{
+        padding-bottom: 156vh;
+    }
+    
+    .hamid-decide-span{
+        font-size: max(15px, 2vw);
+    }
+    .hamid-offers-box {
+        min-width: 240px;
+        height: 300px;
+    }
+    .hamid-offers-content{
+        margin: 10vh 0; 
+    }
+    .hamid-offers-grid-box {
+        grid-template-columns: 240px;
+        min-height: 1300px;
+        gap: 1.5%;
+    }
+
+
+    .hamid-experts{
+        min-height: 200vh;
+    }
+
+    .hamid-experts-grid {
+        grid-template-columns: 255px;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    .hamid-expert-box{
+        min-height: 65vh;
+    }
+
+    .hamid-veg-grid-box {
+        justify-content: center;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 255px;
+        grid-template-rows: 250px 250px 250px 250px ;
+        gap: 20px;
+    }
+    .hamid-icon-section{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw
+    }
+
+    .hamid-decide-container-small{
+        max-width: 100%;
+    }
+
+    .hamid-decide-img{
+        margin: 20% auto 10%;
+    }
+    .hamid-decide-img>img{
+        scale: 1.2;
+    }
+    .hamid-icon-section span{
+        font-size: min(25px, 4vw);
+    }
+
+    .hamid-big-p {
+        font-size: min(8vw, 50px); 
+    }
+}

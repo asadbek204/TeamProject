@@ -1,0 +1,18 @@
+{% macro page_blog_cart(class_name, date_day, date_month, user_name, h1_content, p_content, user_img, button_id) -%}
+<div class="{{ class_name }}">
+    <div class="page-8-date-box">
+        <span class="page-8-date-span-1">{{ date_day }}</span><span class="page-8-date-span-2">{{ date_month }}</span>
+    </div>
+    <div class="page-8-absolute-content">
+        <div class="page-8-inner-box">
+            <img src="{{ url_for('static', filename=user_img) }}" alt="" class="page-8-user-icon">
+            <span class="page-8-user-name">By {{ user_name }}</span>
+        </div>
+        <div class="page-8-inner-text-box">
+            <h1 class="page-8-h1">{{ h1_content }}</h1>
+            <p class="page-8-p">{{ p_content }}</p>
+        </div>
+        <button type="button" class="page-8-button" id="{{ button_id }}">Read More<img src="{{ url_for('static', filename='img/main/aerrow.png') }}" alt="" class="page-blog-aerrow"></button>
+    </div>
+</div>
+{%- endmacro %}

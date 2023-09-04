@@ -1,0 +1,18 @@
+{% extends 'Base.html' %}
+{% block header_container %}
+{{ super() }}
+<div class="header-container-404">
+    <div class="not-found">
+        <div class="text">
+            <h1>404</h1>
+            <h2>Page not found</h2>
+            <p>The page you are looking for doesn't exist or has been moved</p>
+            <div class="button-box-404">
+                <button class="password not">
+                    Go to Homepage <img src="{{ url_for('static', filename='img/main/aerrow.png')}}" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

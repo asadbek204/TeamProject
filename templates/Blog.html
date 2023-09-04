@@ -1,0 +1,25 @@
+{% extends 'Base.html' %}
+{% import 'macros.html' as mcrs %}
+{% block header_container %}
+{{ super() }}
+<div class="header-body-blog">
+    <h1 class="header-blog-h1">Recent News</h1>
+</div>
+{% endblock %}
+
+{% block main_content -%}
+{{ super() }}
+<main id="blog">
+    <div class="page-blog-container">
+        {% for content in cart_content -%}
+        <div class="page-8-body">
+            <div class="page-8-container">
+                {% for i in content -%}
+                    {{ mcrs.page_blog_cart(**i) }}
+                {%- endfor %}
+            </div>
+        </div>
+        {%- endfor %}
+    </div>
+</main>
+{%- endblock %}

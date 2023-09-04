@@ -1934,6 +1934,8 @@ footer a:hover {
     .hamid-experts{
         margin: 10vh 0;
     }
+
+
 }
 @media (max-width: 991.98px) {
     .hamid-my-container {
@@ -2033,6 +2035,19 @@ footer a:hover {
         justify-content: center;
         padding-bottom: 20px;
     }
+
+    .hamid1-experts-grid {
+        grid-template-columns: 47% 47%;
+        column-gap: 6%;
+        
+    }
+    .hamid1-my-container{
+        width: 80%;
+    }
+
+
+    /* font-size: min(8vw, 50px);  */
+    /*  */
 }  
 
 
@@ -2114,4 +2129,22 @@ footer a:hover {
     .hamid-big-p {
         font-size: min(8vw, 50px); 
     }
+
+    .hamid1-big-p{
+        font-size: min(50px, 8vw);
+    }
+    
+    .hamid1-experts-grid {
+        justify-content: center;
+        grid-template-columns: 250px;
+        margin-bottom: 27vh;
+    }
+
+    .hamid1-experts-text{
+        width: 100%;
+    }
+    .hamid1-small-p{
+        margin-bottom: 6vh;
+    }
+    
 }

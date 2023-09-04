@@ -1,0 +1,31 @@
+@media (max-width: 1199.98px) {
+    /* there is nothing */
+}
+@media (max-width: 991.98px) {
+    .hamid1-experts-grid {
+        grid-template-columns: 47% 47%;
+        column-gap: 6%;
+        
+    }
+    .hamid1-my-container{
+        width: 80%;
+    }
+}
+@media (max-width: 767.98px) {
+    .hamid1-big-p{
+        font-size: min(50px, 8vw);
+    }
+    
+    .hamid1-experts-grid {
+        justify-content: center;
+        grid-template-columns: 250px;
+        margin-bottom: 27vh;
+    }
+
+    .hamid1-experts-text{
+        width: 100%;
+    }
+    .hamid1-small-p{
+        margin-bottom: 6vh;
+    }
+}

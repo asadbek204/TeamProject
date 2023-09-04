@@ -1341,7 +1341,7 @@ footer a:hover {
 .hamid2-experts h5 {
     color: #274C5B;
     font-family: Roboto;
-    font-size: 25px;
+    font-size: min(25px, 2vw);
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -2045,6 +2045,15 @@ footer a:hover {
         width: 80%;
     }
 
+    .hamid2-experts-grid{
+        grid-template-columns: 45% 45%;
+        column-gap: 10%;
+
+    }
+
+    .hamid2-my-container {
+        width: 80%;
+    }
 
     /* font-size: min(8vw, 50px);  */
     /*  */
@@ -2131,7 +2140,7 @@ footer a:hover {
     }
 
     .hamid1-big-p{
-        font-size: min(50px, 8vw);
+        font-size: min(50px, 9vw);
     }
     
     .hamid1-experts-grid {
@@ -2146,5 +2155,16 @@ footer a:hover {
     .hamid1-small-p{
         margin-bottom: 6vh;
     }
-    
+    .hamid2-head-text {
+        background-color:#fffdfdb9;
+    }
+
+    .hamid2-experts-grid {
+        grid-template-columns: 250px;
+        justify-content: center;
+        row-gap: 5vh;
+    }
+    .hamid2-experts-desc h5{
+        font-size: 20px;
+    }
 }

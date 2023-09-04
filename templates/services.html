@@ -1,0 +1,109 @@
+{% extends 'Base.html' %}
+{% block header_container%}
+{{ super() }}
+<div class="header-container-services"><h1 class="services-h1">Services</h1></div>
+{% endblock%}
+{% block main_content %}
+<div class="services-page-body" id="service">
+    <div class="services-container">
+        <div class="services-body">
+            <div class="heading">
+                <p class="grow">What we Grow</p>
+                <p class="better">Better Agriculture for <br> Better Future</p>
+            </div>
+            <div class="images">
+                {% macro left_part(class_name) -%}
+                <div class="{{ class_name }}">
+                    <div class="left1">
+                        <img src="{{ url_for('static', filename='img/services/icon.png') }}" alt="">
+                        <h2>Dairy Products</h2>
+                        <p class="prod">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis
+                        </p>
+                    </div>
+                    <div class="left1">
+                        <img src="{{ url_for('static', filename='img/services/icon-2.png')}}" alt="">
+                        <h2>Store Services</h2>
+                        <p class="prod">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis
+                        </p>
+                    </div>
+                    <div class="left1">
+                        <img src="{{ url_for('static', filename='img/services/icon-3.png') }}" alt="">
+                        <h2>Delivery Services</h2>
+                        <p class="prod">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis
+                        </p>
+                    </div>
+                </div>
+                {%- endmacro %}
+                <div class="immg"></div>
+                <div class="right-container">
+                    <div class="left display-none">
+                        <div class="left1">
+                            <img src="{{ url_for('static', filename='img/services/icon.png') }}" alt="">
+                            <h2>Dairy Products</h2>
+                            <p class="prod">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis
+                            </p>
+                        </div>
+                        <div class="left1">
+                            <img src="{{ url_for('static', filename='img/services/icon-2.png')}}" alt="">
+                            <h2>Store Services</h2>
+                            <p class="prod">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis
+                            </p>
+                        </div>
+                        <div class="left1">
+                            <img src="{{ url_for('static', filename='img/services/icon-3.png') }}" alt="">
+                            <h2>Delivery Services</h2>
+                            <p class="prod">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="right1">
+                            <img src="{{ url_for('static', filename='img/services/icon-4.png') }}" alt="">
+                            <h2>Agricultural Services</h2>
+                            <p class="prod">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. <br> Sed ut perspiciatis.
+                            </p>
+                        </div>
+                        <div class="right1">
+                            <img src="{{ url_for('static', filename='img/services/icon-5.png') }}" alt="">
+                            <h2>Organic Products</h2>
+                            <p class="prod">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. <br> Sed ut perspiciatis.
+                            </p>
+                        </div>
+                        <div class="right1">
+                            <img src="{{ url_for('static', filename='img/services/icon-6.png')}}" alt="">
+                            <h2>Fresh Vegetables</h2>
+                            <p class="prod">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. <br> Sed ut perspiciatis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="services-button">Explore More <img src="{{ url_for('static', filename='img/main/aerrow.png') }}" alt="" class="page-2-aerrow"></button>
+    </div>
+    <div class="services-section-2">
+        <div class="services-section-2-container">
+            <div class="services-section-2-content">
+                <div class="services-section-2-head">
+                    <span class="services-italic-green">Organic Only</span>
+                    <h1 class="services-blue-h1">Everyday Fresh & Clean</h1>
+                </div>
+                <p class="services-p">
+                    Simply dummy text of the printing and typesetting industry. Lorem had ceased <br> 
+                    to been the industry's standard dummy text ever since the 
+                </p>
+            </div>
+            <button type="button" class="services-section-2-play-button"></div></button>
+        </div>
+    </div>
+</div>
+{% endblock %}

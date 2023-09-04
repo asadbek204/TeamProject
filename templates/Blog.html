@@ -1,5 +1,5 @@
 {% extends 'Base.html' %}
-
+{% import 'macros.html' as mcrs %}
 {% block header_container %}
 {{ super() }}
 <div class="header-body-blog">
@@ -7,118 +7,19 @@
 </div>
 {% endblock %}
 
-{% block main_content %}
+{% block main_content -%}
 {{ super() }}
 <main id="blog">
     <div class="page-blog-container">
+        {% for content in cart_content -%}
         <div class="page-8-body">
             <div class="page-8-container">
-                <div class="page-8-box-1">
-                    <div class="page-8-date-box">
-                        <span class="page-8-date-span-1">25 </span><span class="page-8-date-span-2"> Nov</span>
-                    </div>
-                    <div class="page-8-absolute-content">
-                        <div class="page-8-inner-box">
-                            <img src="{{ url_for('static', filename='img/blog/user-icon.png') }}" alt="" class="page-8-user-icon">
-                            <span class="page-8-user-name">By Rachi Card</span>
-                        </div>
-                        <div class="page-8-inner-text-box">
-                            <h1 class="page-8-h1">The Benefits of Vitamin D & How to Get It</h1>
-                            <p class="page-8-p">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                        </div>
-                        <button type="button" class="page-8-button">Read More <img src="{{ url_for('static', filename='img/main/aerrow.png') }}" alt="" class="page-blog-aerrow"></button>
-                    </div>
-                </div>
-                <div class="page-8-box-2">
-                    <div class="page-8-date-box">
-                        <span class="page-8-date-span-1">25 </span><span class="page-8-date-span-2"> Nov</span>
-                    </div>
-                    <div class="page-8-absolute-content">
-                        <div class="page-8-inner-box">
-                            <img src="{{ url_for('static', filename='img/blog/user-icon.png') }}" alt="" class="page-8-user-icon">
-                            <span class="page-8-user-name">By Rachi Card</span>
-                        </div>
-                        <div class="page-8-inner-text-box">
-                            <h1 class="page-8-h1">Our Favourite Summertime Tomato</h1>
-                            <p class="page-8-p">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                        </div>
-                        <button type="button" class="page-8-button">Read More <img src="{{ url_for('static', filename='img/main/aerrow.png') }}" alt=""  class="page-blog-aerrow"></button>
-                    </div>
-                </div>
+                {% for i in content -%}
+                    {{ mcrs.page_blog_cart(**i) }}
+                {%- endfor %}
             </div>
         </div>
-        <div class="page-8-body">
-            <div class="page-8-container">
-                <div class="page-blog-box-3">
-                    <div class="page-8-date-box">
-                        <span class="page-8-date-span-1">25 </span><span class="page-8-date-span-2"> Nov</span>
-                    </div>
-                    <div class="page-8-absolute-content">
-                        <div class="page-8-inner-box">
-                            <img src="{{ url_for('static', filename='img/blog/user-icon.png') }}" alt="" class="page-8-user-icon">
-                            <span class="page-8-user-name">By Rachi Card</span>
-                        </div>
-                        <div class="page-8-inner-text-box">
-                            <h1 class="page-8-h1">Benefits of Vitamin D & How to Get It</h1>
-                            <p class="page-8-p">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                        </div>
-                        <button type="button" class="page-8-button">Read More <img src="{{ url_for('static', filename='img/main/aerrow.png') }}" alt="" class="page-blog-aerrow"></button>
-                    </div>
-                </div>
-                <div class="page-blog-box-4">
-                    <div class="page-8-date-box">
-                        <span class="page-8-date-span-1">25 </span><span class="page-8-date-span-2"> Nov</span>
-                    </div>
-                    <div class="page-8-absolute-content">
-                        <div class="page-8-inner-box">
-                            <img src="{{ url_for('static', filename='img/blog/user-icon.png') }}" alt="" class="page-8-user-icon">
-                            <span class="page-8-user-name">By Rachi Card</span>
-                        </div>
-                        <div class="page-8-inner-text-box">
-                            <h1 class="page-8-h1">Research More Organic Foods</h1>
-                            <p class="page-8-p">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                        </div>
-                        <button type="button" class="page-8-button">Read More <img src="{{ url_for('static', filename='img/main/aerrow.png') }}" alt=""  class="page-blog-aerrow"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="page-8-body">
-            <div class="page-8-container">
-                <div class="page-blog-box-5">
-                    <div class="page-8-date-box">
-                        <span class="page-8-date-span-1">25 </span><span class="page-8-date-span-2"> Nov</span>
-                    </div>
-                    <div class="page-8-absolute-content">
-                        <div class="page-8-inner-box">
-                            <img src="{{ url_for('static', filename='img/blog/user-icon.png') }}" alt="" class="page-8-user-icon">
-                            <span class="page-8-user-name">By Rachi Card</span>
-                        </div>
-                        <div class="page-8-inner-text-box">
-                            <h1 class="page-8-h1">Everyday Fresh Fruites</h1>
-                            <p class="page-8-p">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                        </div>
-                        <button type="button" class="page-8-button">Read More <img src="{{ url_for('static', filename='img/main/aerrow.png') }}" alt=""  class="page-blog-aerrow"></button>
-                    </div>
-                </div>
-                <div class="page-blog-box-6">
-                    <div class="page-8-date-box">
-                        <span class="page-8-date-span-1">25 </span><span class="page-8-date-span-2"> Nov</span>
-                    </div>
-                    <div class="page-8-absolute-content">
-                        <div class="page-8-inner-box">
-                            <img src="{{ url_for('static', filename='img/blog/user-icon.png') }}" alt="" class="page-8-user-icon">
-                            <span class="page-8-user-name">By Rachi Card</span>
-                        </div>
-                        <div class="page-8-inner-text-box">
-                            <h1 class="page-8-h1">Don’t Use Plastic Product! it’s Kill Nature</h1>
-                            <p class="page-8-p">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                        </div>
-                        <button type="button" class="page-8-button">Read More <img src="{{ url_for('static', filename='img/main/aerrow.png') }}" alt=""  class="page-blog-aerrow"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {%- endfor %}
     </div>
 </main>
-{% endblock %}
+{%- endblock %}

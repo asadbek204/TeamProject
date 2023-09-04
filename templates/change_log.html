@@ -2,16 +2,11 @@
 {% block header_container %}
 {{ super() }}
 <div class="header-container-change-log">
-    <div class="image-change">
-        
-    </div>
     <div class="change-log">
-        <img src="img/change-log-photo.svg" alt="">
+        <img src="{{ url_for('static', filename='img/change_log/change-log-photo.svg') }}" alt="">
         <div class="txt">
             <h1>V.1</h1>
-            <p>
-                Initial Organick Webflow Template Release
-            </p>
+            <p>Initial Organick Webflow Template Release</p>
         </div>
     </div>
 </div>

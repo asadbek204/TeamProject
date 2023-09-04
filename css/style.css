@@ -1089,7 +1089,7 @@ footer a:hover {
     line-height: normal;
 }
 .hamid3-pick-scale>input {
-    height: min(7.5vh, 4.3vw);
+    height: min(80px, 4vw);
     color: #274C5B;
     font-family: Roboto;
     font-size: 20px;
@@ -1928,15 +1928,24 @@ footer a:hover {
     }
 
     .hamid-plate-box{
-            padding-bottom: 5vh;
+        padding-bottom: 5vh;
     }
 
     .hamid-experts{
         margin: 10vh 0;
     }
 
+    .hamid3-products-grid{
+        grid-template-columns: auto auto;
+        row-gap: 20px;
+        column-gap: 3vw;
+    }
+    .hamid3-products-grid>div {
+        max-width: 370px
+    }
 
 }
+
 @media (max-width: 991.98px) {
     .hamid-my-container {
         width: 85%;
@@ -2057,6 +2066,39 @@ footer a:hover {
 
     /* font-size: min(8vw, 50px);  */
     /*  */
+    .hamid3-product-inf>.hamid3-buttons-box>button:first-child {
+        width: 210px;
+    }
+    
+    .hamid3-product-inf>.hamid3-buttons-box>button:last-child {
+        width: 170px;
+    }
+
+    .hamid3-product-select{
+        grid-template-columns: auto;
+        grid-template-rows: 60% 25%;
+        row-gap: 15%;
+        margin-bottom: 15vh;
+    }
+
+    .hamid3-prices-container{
+        gap: 2vh
+    }
+
+    .hamid3-pick-scale {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        justify-content: center;
+    }
+    .hamid3-pick-scale > input {
+        height: 45px;
+    }
+    #hamid-casual-button {
+        height: 45px;
+    }
+
+    
+
 }  
 
 
@@ -2067,11 +2109,7 @@ footer a:hover {
     .hamid-plate-img>img{
         width: 160%;
     }
-    #hamid-casual-button {
-        width: 120px;
-        font-size: 10px;
-        height: 30px;
-    }
+    
 
     .hamid-veg-background{
         padding-bottom: 156vh;
@@ -2155,5 +2193,32 @@ footer a:hover {
     .hamid1-small-p{
         margin-bottom: 6vh;
     }
-    
+    .hamid3-pick-scale > input {
+        font-size: 15px;
+        width: 60px;
+    }
+    #hamid-casual-button {
+        width: 120px;
+        font-size: 15px;
+    }
+    .hamid3-product-select{
+        margin-bottom: 25vh;
+        row-gap: 22vh;
+    }
+    .hamid3-my-container {
+        width: 80%;
+    }
+
+    .hamid3-products-grid{
+
+        grid-template-columns: auto;
+    }
+
+    .hamid3-products-grid>div {
+        min-width: 100%;
+    }   
+    .hamid3-my-container h1 {
+        font-size: min(50px, 9vw);
+
+    }
 }

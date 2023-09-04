@@ -2155,16 +2155,5 @@ footer a:hover {
     .hamid1-small-p{
         margin-bottom: 6vh;
     }
-    .hamid2-head-text {
-        background-color:#fffdfdb9;
-    }
-
-    .hamid2-experts-grid {
-        grid-template-columns: 250px;
-        justify-content: center;
-        row-gap: 5vh;
-    }
-    .hamid2-experts-desc h5{
-        font-size: 20px;
-    }
+    
 }

@@ -35,7 +35,7 @@ button, input {
 }
 
 .nav-cart-box:hover,
-button:hover {
+button:hover{
     cursor: pointer;
     box-shadow: -5px 3px 5px #e0dddd;
 }
@@ -2718,7 +2718,7 @@ footer a:hover {
         width: 100%;
         min-height: 140vh;
         background-color: var(--clr-white-gray);
-        padding-bottom: 50vh;
+        padding-bottom: 15vh;
     }
 
     .hamid-veg-background>.hamid-my-container {
@@ -2806,6 +2806,9 @@ footer a:hover {
         justify-content: center;
         padding-bottom: 20px;
     }
+    .hamid-experts-grid>div{
+        min-height: 47vh;
+    }
 
     .hamid1-experts-grid {
         grid-template-columns: 47% 47%;
@@ -2874,17 +2877,6 @@ footer a:hover {
 }  
 
 
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 767.98px) {
     .hamid-plate-img{
         left: -12%;
@@ -2895,7 +2887,7 @@ footer a:hover {
     
 
     .hamid-veg-background{
-        padding-bottom: 156vh;
+        padding-bottom: 90vh;
     }
     
     .hamid-decide-span{

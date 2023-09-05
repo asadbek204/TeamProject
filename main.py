@@ -8,7 +8,6 @@ pages: list = [
     ('portfolio', 'Portfolio'),
     ('blog', 'Blog'),
     ('team', 'Team'),
-    ('contact', 'Contact')
 ]
 
 # page blog content 

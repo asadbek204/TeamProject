@@ -1,0 +1,80 @@
+{% extends 'Base.html' %}
+{% block header_container %}
+<div class="hamid2-header-body">
+    <!-- end of navigation bar -->
+
+    <!-- SHU YERDAN BOSHLANADI -->
+    <div class="hamid2-header-container">
+
+        <!-- banner start -->
+        <div class="hamid2-head-baner">
+            <img src="{{ url_for('static', filename='img/img/port-standart/back-ground-img.svg') }}" alt="" class="hamid2-head-img">
+            <img src="{{ url_for('static', filename='img/img/port-standart/background-Patterns.svg') }}" alt="" class="hamid2-head-img2">
+            <span class="hamid2-head-text">Portfolio Standard</span>
+        </div>
+        <!--banner end -->
+    </div>
+</div>
+{% endblock %}
+{% block main_content %}
+<main>
+    <div class="hamid2-experts">
+        <div class="hamid2-my-container">
+            
+            <div class="hamid2-experts-grid">
+
+                <div  class="hamid2-expert-box">
+                    <img src="{{ url_for('static', filename='img/img//port-standart/item1.svg') }}" alt="">
+                    <div class="hamid2-experts-desc">
+                        <h5>Green & Tasty Lemon</h5>
+                        <h3>Fruits</h3>
+                    </div> 
+                    
+                </div>
+                <div class="hamid2-expert-box">
+                    <img src="{{ url_for('static', filename='img/img/port-standart/item2.svg') }}" alt="">
+                    <div class="hamid2-experts-desc">
+                        <h5>Organic Carrot</h5>
+                    <h3>Farmer</h3>
+                    </div>
+
+                </div>
+                <div class="hamid2-expert-box">
+                    <img src="{{ url_for('static', filename='img/img/port-standart/item3.svg') }}" alt="">
+                    <div class="hamid2-experts-desc">
+                        <h5>Organic Betel Leaf</h5>
+                    <h3>Leaf</h3>
+                    </div>
+
+                </div>
+                <div class="hamid2-expert-box">
+                    <img src="{{ url_for('static', filename='img/img/port-standart/item4.svg') }}" alt="">
+                    <div class="hamid2-experts-desc">
+                        <h5>Natural Tommato</h5>
+                    <h3>Fruits</h3>
+                    </div>
+
+                </div>
+                <div class="hamid2-expert-box">
+                    <img src="{{ url_for('static', filename='img/img/port-standart/item5.svg') }}" alt="">
+                    <div class="hamid2-experts-desc">
+                        <h5>Black Raspberry</h5>
+                    <h3>Farmer</h3>
+                    </div>
+
+                </div>
+
+                <div class="hamid2-expert-box">
+                    <img src="{{ url_for('static', filename='img/img/port-standart/item6.svg') }}" alt="">
+                    <div class="hamid2-experts-desc">
+                        <h5>Honey Orange</h5>
+                    <h3>Farmer</h3>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

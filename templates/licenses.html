@@ -3,52 +3,63 @@
 {% block header_container %}
 {{ super() }}
 <div class="header-container-licenses">
-    <div class="image-licence">
-
-    </div>
-    <div class="all-licence">
-        <div class="all-h1">
-            <h1>Icon & Graphics</h1>
-            <h1>Photography</h1>
-            <h1>Font</h1>
+    <h1 class="licenses-header-h1">Licenses</h1>
+</div>
+{% endblock %}
+{% block main_content %}
+<main id="licenses">
+    <div class="main-container-licenses">
+        <div class='licenses-box'>
+            <h1 class="licenses-h1">Icon & Graphics</h1>
+            <div class="licenses-inner-box">
+                <p class="licenses-p">
+                    Icons and Graphics are manually designed by the 
+                    <span class="designed-by">VictorFlow</span> 
+                    Templates team. You may download these and edit them to fit your 
+                    website without asking for permission or providing credit.
+                </p>
+                <p class="licenses-p">
+                    Upon purchasing Software UI Kit Template our team grants you a 
+                    nonexclusive, worldwide copyright license to download, copy, 
+                    modify, and use the icons.
+                </p>
+            </div>
         </div>
-        <div class="licence-p">
-            <div class="all-p">
-                <p>
-                    Icons and Graphics are manually designed by the <span class="victor">VictorFlow</span> Templates
-                    team. You may download these and edit them to fit your website without asking for permission or
-                    providing credit.
-                    <br>
-                    Upon purchasing Software UI Kit Template our team grants you a nonexclusive, worldwide copyright
-                    license to download, copy, modify, and use the icons.
+        <div class='licenses-box'>
+            <h1 class="licenses-h1">Photography</h1>
+            <div class="licenses-inner-box">
+                <p class="licenses-p">
+                    All images used in the Organick Webflow Template are licensed 
+                    for free personal and commercial use. If you'd like to use any 
+                    specific image, you can check the licenses and download the 
+                    images for free on Unsplash, Pexels‍. And Freepik.
                 </p>
-                <p>
-                    All images used in the Organick Webflow Template are licensed for free personal and commercial
-                    use. If you'd like to use any specific image, you can check the licenses and download the images
-                    for free on Unsplash, Pexels‍. And Freepik.
-                </p>
-                <h3 class="licence">
-                    Unsplash
-                </h3>
-                <p>
-                    Image 1, Image 2, Image 3, Image 4, Image 5, Image 6, Image 7, Image 8, Image 9, Image 10, Image
-                    11, Image 12, Image 13, Image 14, Image 15, Image 16, Image 17, Image 18, Image 19, Image 20,
-                    Image 21, Image 22, Image 23, Image 24, Image 25,
-                </p>
-                <h3 class="licence">
-                    Pixcel
-                </h3>
-                <p>
-                    Image 1, Image 2, Image 3, Image 4, Image 5, Image 6, Image 7, Image 8, Image 9, Image 10, Image
-                    11, Image 12, Image 13, Image 14, Image 15, Image 16, Image 17,
-                </p>
-                <p>
-                    Organick template uses free licensed Google Fonts. Please check <span class="font-color">Roboto,
-                        Yellowtail</span>
-                    and <span class="font-color">Open Sans.</span>
+                <div class="licenses-p-2-box">
+                    <h2 class="licenses-p-inner-h2">Unsplash</h2>
+                    {% for i in range(1, 26) -%}
+                        <a href="" class="licenses-link"> image {{ i }}, </a>
+                    {%- endfor -%}
+                </div>
+                <div class="licenses-p-2-box">
+                    <h2 class="licenses-p-inner-h2">Pixcel</h2>
+                    {% for i in range(1, 18) -%}
+                        <a href="" class="licenses-link">image {{ i }},</a>
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+        <div class='licenses-box'>
+            <h1 class="licenses-h1">Font</h1>
+            <div class="licenses-inner-box">
+                <p class="licenses-p">
+                    Organick template uses free licensed Google Fonts. Please check 
+                    <span class="licenses-fonts-in-p">Roboto,</span> 
+                    <span class="licenses-fonts-in-p">Yellowtail</span> <br>
+                    and 
+                    <span class="licenses-fonts-in-p">Open Sans.</span>
                 </p>
             </div>
         </div>
     </div>
-</div>
+</main>
 {% endblock %}

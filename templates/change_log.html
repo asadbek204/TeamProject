@@ -1,7 +1,10 @@
 {% extends 'Base.html' %}
 {% block header_container %}
 {{ super() }}
-<div class="header-container-change-log">
+<div class="header-container-change-log"><h1 class="change-log-h1">Changelog</h1></div>
+{% endblock %}
+{% block main_content %}
+<main id="change-log">
     <div class="change-log">
         <img src="{{ url_for('static', filename='img/change_log/change-log-photo.svg') }}" alt="">
         <div class="txt">
@@ -9,5 +12,5 @@
             <p>Initial Organick Webflow Template Release</p>
         </div>
     </div>
-</div>
+</main>
 {% endblock %}

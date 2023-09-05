@@ -64,18 +64,18 @@ def main():
 @app.route('/blog')
 def blog():
     return render_template('Blog.html', title='Blog', pages=pages[:3] + pages[4:], cart_content=page_blog_content)
-
+@app.route('/service/')
 @app.route('/service')
 def service():
     return render_template('services.html', title='Services', pages=pages[:1] +pages[2:], haven_t_form='haven-t-form')
 
 @app.route('/portfolio')
 def portfolio():
-    return '<h1>portfolio page</h1>'
+    return render_template('port-standart.html', title='Portfolio Standard', pages=[pages[0]]+pages[1:])
 
 @app.route('/team')
 def team():
-    return '<h1>team page</h1>'
+    return render_template('our-team.html', title="Team", pages=pages[:-2] + [pages[-1]])
 
 @app.route('/contact')
 def contact():
@@ -83,11 +83,11 @@ def contact():
 
 @app.route('/about')
 def about():
-    return '<h1>about page</h1>'
+    return render_template('about_us.html', title='About Us', pages=pages)
 
 @app.route('/shop')
 def shop():
-    return '<h1>shop page</h1>'
+    return render_template('shop.html', title='Shop', pages=pages)
 
 @app.route('/projects')
 def projects():
@@ -125,7 +125,15 @@ def service_single(name):
         case 'fresh_vegetables':
             return 'fresh vegetables'
         case _:
-            return not_found()
+            return url_for('service')
+        
+@app.route('/shop/<string:name>')
+def shop_single(name):
+    match name:
+        case 'white_nuts':
+            return render_template('shop_single.html', title='White Nuts', pages=pages)
+        case _:
+            return f"<h1> {name} </h1>"
 
 @app.route('/not_found')
 @app.errorhandler(404)
